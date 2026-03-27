@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project-specific
+analysis_outputs/*.md
+analysis_outputs/*.json
+!analysis_outputs/.gitkeep
+
+# Large data files (keep structure, ignore content)
+reference_data/*.txt
+reference_data/*.csv
+!reference_data/.gitkeep
+
+# Temporary files
+*.tmp
+*.bak
+*.log
