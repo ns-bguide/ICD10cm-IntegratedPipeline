@@ -25,9 +25,10 @@ analysis_outputs/*.md
 analysis_outputs/*.json
 !analysis_outputs/.gitkeep
 
-# Large data files (keep structure, ignore content)
-reference_data/*.txt
-reference_data/*.csv
+# Large data files (optional - can be regenerated)
+# Uncomment to exclude large reference files:
+# reference_data/*.txt
+# reference_data/*.csv
 !reference_data/.gitkeep
 
 # Temporary files
