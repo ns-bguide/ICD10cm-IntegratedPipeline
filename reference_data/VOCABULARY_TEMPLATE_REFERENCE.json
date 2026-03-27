@@ -1,0 +1,4554 @@
+{
+  "metadata": {
+    "description": "Combined family templates with vocabulary references",
+    "total_families": 71,
+    "total_vocabularies": 26
+  },
+  "families": {
+    "diagnostic_event_x_condition_x_diagnostic_context": {
+      "slots": [
+        {
+          "slot_name": "diagnostic_event",
+          "vocabulary_name": "DIAGNOSTIC_EVENT_TOKENS",
+          "vocabulary_size": 13,
+          "sample_tokens": [
+            "aftercare",
+            "diagnosis",
+            "exam",
+            "examination",
+            "finding",
+            "findings",
+            "follow",
+            "followup",
+            "history",
+            "observation"
+          ]
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary_name": "CONDITION_TOKENS",
+          "vocabulary_size": 201,
+          "sample_tokens": [
+            "abscess",
+            "absence",
+            "abuse",
+            "acne",
+            "adenoma",
+            "adhesion",
+            "agenesis",
+            "albinism",
+            "alopecia",
+            "amyloidosis"
+          ]
+        },
+        {
+          "slot_name": "diagnostic_context",
+          "vocabulary_name": "DIAGNOSTIC_CONTEXT_TOKENS",
+          "vocabulary_size": 0,
+          "sample_tokens": []
+        }
+      ],
+      "slot_count": 3,
+      "complexity_score": 2613,
+      "template_pattern": "diagnostic_event × condition × diagnostic_context"
+    },
+    "qualifier_x_diagnostic_event_x_condition_x_diagnostic_context": {
+      "slots": [
+        {
+          "slot_name": "qualifier",
+          "vocabulary_name": "QUALIFIER_TOKENS",
+          "vocabulary_size": 107,
+          "sample_tokens": [
+            "abnormal",
+            "abnormality",
+            "adult",
+            "allergic",
+            "alpha",
+            "androgenic",
+            "anetoderma",
+            "aneurysmal",
+            "arrest",
+            "associated"
+          ]
+        },
+        {
+          "slot_name": "diagnostic_event",
+          "vocabulary_name": "DIAGNOSTIC_EVENT_TOKENS",
+          "vocabulary_size": 13,
+          "sample_tokens": [
+            "aftercare",
+            "diagnosis",
+            "exam",
+            "examination",
+            "finding",
+            "findings",
+            "follow",
+            "followup",
+            "history",
+            "observation"
+          ]
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary_name": "CONDITION_TOKENS",
+          "vocabulary_size": 201,
+          "sample_tokens": [
+            "abscess",
+            "absence",
+            "abuse",
+            "acne",
+            "adenoma",
+            "adhesion",
+            "agenesis",
+            "albinism",
+            "alopecia",
+            "amyloidosis"
+          ]
+        },
+        {
+          "slot_name": "diagnostic_context",
+          "vocabulary_name": "DIAGNOSTIC_CONTEXT_TOKENS",
+          "vocabulary_size": 0,
+          "sample_tokens": []
+        }
+      ],
+      "slot_count": 4,
+      "complexity_score": 279591,
+      "template_pattern": "qualifier × diagnostic_event × condition × diagnostic_context"
+    },
+    "diagnostic_classifier_x_anatomy_x_injury_x_diagnostic_event": {
+      "slots": [
+        {
+          "slot_name": "diagnostic_classifier",
+          "vocabulary_name": "DIAGNOSTIC_CLASSIFIER_TOKENS",
+          "vocabulary_size": 74,
+          "sample_tokens": [
+            "activity",
+            "age",
+            "agerelated",
+            "bcell",
+            "bent",
+            "blood",
+            "borne",
+            "both",
+            "cancers",
+            "cell"
+          ]
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        },
+        {
+          "slot_name": "diagnostic_event",
+          "vocabulary_name": "DIAGNOSTIC_EVENT_TOKENS",
+          "vocabulary_size": 13,
+          "sample_tokens": [
+            "aftercare",
+            "diagnosis",
+            "exam",
+            "examination",
+            "finding",
+            "findings",
+            "follow",
+            "followup",
+            "history",
+            "observation"
+          ]
+        }
+      ],
+      "slot_count": 4,
+      "complexity_score": 6918704,
+      "template_pattern": "diagnostic_classifier × anatomy × injury × diagnostic_event"
+    },
+    "anatomy_x_injury_x_diagnostic_event": {
+      "slots": [
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        },
+        {
+          "slot_name": "diagnostic_event",
+          "vocabulary_name": "DIAGNOSTIC_EVENT_TOKENS",
+          "vocabulary_size": 13,
+          "sample_tokens": [
+            "aftercare",
+            "diagnosis",
+            "exam",
+            "examination",
+            "finding",
+            "findings",
+            "follow",
+            "followup",
+            "history",
+            "observation"
+          ]
+        }
+      ],
+      "slot_count": 3,
+      "complexity_score": 93496,
+      "template_pattern": "anatomy × injury × diagnostic_event"
+    },
+    "injury_x_healing_x_diagnostic_event": {
+      "slots": [
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        },
+        {
+          "slot_name": "healing",
+          "vocabulary_name": "HEALING_TOKENS",
+          "vocabulary_size": 6,
+          "sample_tokens": [
+            "delayed",
+            "heal",
+            "healing",
+            "malunion",
+            "nonunion",
+            "routine"
+          ]
+        },
+        {
+          "slot_name": "diagnostic_event",
+          "vocabulary_name": "DIAGNOSTIC_EVENT_TOKENS",
+          "vocabulary_size": 13,
+          "sample_tokens": [
+            "aftercare",
+            "diagnosis",
+            "exam",
+            "examination",
+            "finding",
+            "findings",
+            "follow",
+            "followup",
+            "history",
+            "observation"
+          ]
+        }
+      ],
+      "slot_count": 3,
+      "complexity_score": 2418,
+      "template_pattern": "injury × healing × diagnostic_event"
+    },
+    "anatomy_x_condition_x_diagnostic_event": {
+      "slots": [
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary_name": "CONDITION_TOKENS",
+          "vocabulary_size": 201,
+          "sample_tokens": [
+            "abscess",
+            "absence",
+            "abuse",
+            "acne",
+            "adenoma",
+            "adhesion",
+            "agenesis",
+            "albinism",
+            "alopecia",
+            "amyloidosis"
+          ]
+        },
+        {
+          "slot_name": "diagnostic_event",
+          "vocabulary_name": "DIAGNOSTIC_EVENT_TOKENS",
+          "vocabulary_size": 13,
+          "sample_tokens": [
+            "aftercare",
+            "diagnosis",
+            "exam",
+            "examination",
+            "finding",
+            "findings",
+            "follow",
+            "followup",
+            "history",
+            "observation"
+          ]
+        }
+      ],
+      "slot_count": 3,
+      "complexity_score": 606216,
+      "template_pattern": "anatomy × condition × diagnostic_event"
+    },
+    "diagnostic_event_x_condition": {
+      "slots": [
+        {
+          "slot_name": "diagnostic_event",
+          "vocabulary_name": "DIAGNOSTIC_EVENT_TOKENS",
+          "vocabulary_size": 13,
+          "sample_tokens": [
+            "aftercare",
+            "diagnosis",
+            "exam",
+            "examination",
+            "finding",
+            "findings",
+            "follow",
+            "followup",
+            "history",
+            "observation"
+          ]
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary_name": "CONDITION_TOKENS",
+          "vocabulary_size": 201,
+          "sample_tokens": [
+            "abscess",
+            "absence",
+            "abuse",
+            "acne",
+            "adenoma",
+            "adhesion",
+            "agenesis",
+            "albinism",
+            "alopecia",
+            "amyloidosis"
+          ]
+        }
+      ],
+      "slot_count": 2,
+      "complexity_score": 2613,
+      "template_pattern": "diagnostic_event × condition"
+    },
+    "diagnostic_event_x_injury": {
+      "slots": [
+        {
+          "slot_name": "diagnostic_event",
+          "vocabulary_name": "DIAGNOSTIC_EVENT_TOKENS",
+          "vocabulary_size": 13,
+          "sample_tokens": [
+            "aftercare",
+            "diagnosis",
+            "exam",
+            "examination",
+            "finding",
+            "findings",
+            "follow",
+            "followup",
+            "history",
+            "observation"
+          ]
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        }
+      ],
+      "slot_count": 2,
+      "complexity_score": 403,
+      "template_pattern": "diagnostic_event × injury"
+    },
+    "toxic_event_x_agent_x_intent_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "toxic_event",
+          "vocabulary_name": "TOXIC_EVENT_TOKENS",
+          "vocabulary_size": 9,
+          "sample_tokens": [
+            "adverse",
+            "eff",
+            "effect",
+            "envenomation",
+            "overdose",
+            "poison",
+            "poisoning",
+            "toxic",
+            "underdosing"
+          ]
+        },
+        {
+          "slot_name": "toxic_agent",
+          "vocabulary_name": "TOXIC_AGENT_TOKENS",
+          "vocabulary_size": 37,
+          "sample_tokens": [
+            "acid",
+            "agent",
+            "agents",
+            "alcohol",
+            "anesthetics",
+            "antibiotics",
+            "antidepressants",
+            "antiepileptic",
+            "brucella",
+            "carbon"
+          ]
+        },
+        {
+          "slot_name": "toxic_intent",
+          "vocabulary_name": "TOXIC_INTENT_TOKENS",
+          "vocabulary_size": 12,
+          "sample_tokens": [
+            "acc",
+            "accidental",
+            "assault",
+            "harm",
+            "hrm",
+            "intentional",
+            "self",
+            "selfharm",
+            "slf",
+            "undet"
+          ]
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        }
+      ],
+      "slot_count": 4,
+      "complexity_score": 75924,
+      "template_pattern": "toxic_event × toxic_agent × toxic_intent × encounter"
+    },
+    "toxic_event_x_intent_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "toxic_event",
+          "vocabulary_name": "TOXIC_EVENT_TOKENS",
+          "vocabulary_size": 9,
+          "sample_tokens": [
+            "adverse",
+            "eff",
+            "effect",
+            "envenomation",
+            "overdose",
+            "poison",
+            "poisoning",
+            "toxic",
+            "underdosing"
+          ]
+        },
+        {
+          "slot_name": "toxic_intent",
+          "vocabulary_name": "TOXIC_INTENT_TOKENS",
+          "vocabulary_size": 12,
+          "sample_tokens": [
+            "acc",
+            "accidental",
+            "assault",
+            "harm",
+            "hrm",
+            "intentional",
+            "self",
+            "selfharm",
+            "slf",
+            "undet"
+          ]
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        }
+      ],
+      "slot_count": 3,
+      "complexity_score": 2052,
+      "template_pattern": "toxic_event × toxic_intent × encounter"
+    },
+    "toxic_event_x_agent_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "toxic_event",
+          "vocabulary_name": "TOXIC_EVENT_TOKENS",
+          "vocabulary_size": 9,
+          "sample_tokens": [
+            "adverse",
+            "eff",
+            "effect",
+            "envenomation",
+            "overdose",
+            "poison",
+            "poisoning",
+            "toxic",
+            "underdosing"
+          ]
+        },
+        {
+          "slot_name": "toxic_agent",
+          "vocabulary_name": "TOXIC_AGENT_TOKENS",
+          "vocabulary_size": 37,
+          "sample_tokens": [
+            "acid",
+            "agent",
+            "agents",
+            "alcohol",
+            "anesthetics",
+            "antibiotics",
+            "antidepressants",
+            "antiepileptic",
+            "brucella",
+            "carbon"
+          ]
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        }
+      ],
+      "slot_count": 3,
+      "complexity_score": 6327,
+      "template_pattern": "toxic_event × toxic_agent × encounter"
+    },
+    "qualifier_x_toxic_event_x_intent_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "qualifier",
+          "vocabulary_name": "QUALIFIER_TOKENS",
+          "vocabulary_size": 107,
+          "sample_tokens": [
+            "abnormal",
+            "abnormality",
+            "adult",
+            "allergic",
+            "alpha",
+            "androgenic",
+            "anetoderma",
+            "aneurysmal",
+            "arrest",
+            "associated"
+          ]
+        },
+        {
+          "slot_name": "toxic_event",
+          "vocabulary_name": "TOXIC_EVENT_TOKENS",
+          "vocabulary_size": 9,
+          "sample_tokens": [
+            "adverse",
+            "eff",
+            "effect",
+            "envenomation",
+            "overdose",
+            "poison",
+            "poisoning",
+            "toxic",
+            "underdosing"
+          ]
+        },
+        {
+          "slot_name": "toxic_intent",
+          "vocabulary_name": "TOXIC_INTENT_TOKENS",
+          "vocabulary_size": 12,
+          "sample_tokens": [
+            "acc",
+            "accidental",
+            "assault",
+            "harm",
+            "hrm",
+            "intentional",
+            "self",
+            "selfharm",
+            "slf",
+            "undet"
+          ]
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        }
+      ],
+      "slot_count": 4,
+      "complexity_score": 219564,
+      "template_pattern": "qualifier × toxic_event × toxic_intent × encounter"
+    },
+    "toxic_event_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "toxic_event",
+          "vocabulary_name": "TOXIC_EVENT_TOKENS",
+          "vocabulary_size": 9,
+          "sample_tokens": [
+            "adverse",
+            "eff",
+            "effect",
+            "envenomation",
+            "overdose",
+            "poison",
+            "poisoning",
+            "toxic",
+            "underdosing"
+          ]
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        }
+      ],
+      "slot_count": 2,
+      "complexity_score": 171,
+      "template_pattern": "toxic_event × encounter"
+    },
+    "qualifier_x_anatomy_x_injury_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "qualifier",
+          "vocabulary_name": "QUALIFIER_TOKENS",
+          "vocabulary_size": 107,
+          "sample_tokens": [
+            "abnormal",
+            "abnormality",
+            "adult",
+            "allergic",
+            "alpha",
+            "androgenic",
+            "anetoderma",
+            "aneurysmal",
+            "arrest",
+            "associated"
+          ]
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        }
+      ],
+      "slot_count": 4,
+      "complexity_score": 14621336,
+      "template_pattern": "qualifier × anatomy × injury × encounter"
+    },
+    "qualifier_x_injury_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "qualifier",
+          "vocabulary_name": "QUALIFIER_TOKENS",
+          "vocabulary_size": 107,
+          "sample_tokens": [
+            "abnormal",
+            "abnormality",
+            "adult",
+            "allergic",
+            "alpha",
+            "androgenic",
+            "anetoderma",
+            "aneurysmal",
+            "arrest",
+            "associated"
+          ]
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        }
+      ],
+      "slot_count": 3,
+      "complexity_score": 63023,
+      "template_pattern": "qualifier × injury × encounter"
+    },
+    "qualifier_x_anatomy_x_condition": {
+      "slots": [
+        {
+          "slot_name": "qualifier",
+          "vocabulary_name": "QUALIFIER_TOKENS",
+          "vocabulary_size": 107,
+          "sample_tokens": [
+            "abnormal",
+            "abnormality",
+            "adult",
+            "allergic",
+            "alpha",
+            "androgenic",
+            "anetoderma",
+            "aneurysmal",
+            "arrest",
+            "associated"
+          ]
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary_name": "CONDITION_TOKENS",
+          "vocabulary_size": 201,
+          "sample_tokens": [
+            "abscess",
+            "absence",
+            "abuse",
+            "acne",
+            "adenoma",
+            "adhesion",
+            "agenesis",
+            "albinism",
+            "alopecia",
+            "amyloidosis"
+          ]
+        }
+      ],
+      "slot_count": 3,
+      "complexity_score": 4989624,
+      "template_pattern": "qualifier × anatomy × condition"
+    },
+    "qualifier_x_condition": {
+      "slots": [
+        {
+          "slot_name": "qualifier",
+          "vocabulary_name": "QUALIFIER_TOKENS",
+          "vocabulary_size": 107,
+          "sample_tokens": [
+            "abnormal",
+            "abnormality",
+            "adult",
+            "allergic",
+            "alpha",
+            "androgenic",
+            "anetoderma",
+            "aneurysmal",
+            "arrest",
+            "associated"
+          ]
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary_name": "CONDITION_TOKENS",
+          "vocabulary_size": 201,
+          "sample_tokens": [
+            "abscess",
+            "absence",
+            "abuse",
+            "acne",
+            "adenoma",
+            "adhesion",
+            "agenesis",
+            "albinism",
+            "alopecia",
+            "amyloidosis"
+          ]
+        }
+      ],
+      "slot_count": 2,
+      "complexity_score": 21507,
+      "template_pattern": "qualifier × condition"
+    },
+    "anatomy_x_injury_x_fracture_detail_x_healing_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        },
+        {
+          "slot_name": "fracture_detail",
+          "vocabulary_name": "FRACTURE_DETAIL_TOKENS",
+          "vocabulary_size": 25,
+          "sample_tokens": [
+            "base",
+            "closed",
+            "comminuted",
+            "disp",
+            "displaced",
+            "epiphysis",
+            "extra-articular",
+            "extraarticular",
+            "fx",
+            "head"
+          ]
+        },
+        {
+          "slot_name": "healing",
+          "vocabulary_name": "HEALING_TOKENS",
+          "vocabulary_size": 6,
+          "sample_tokens": [
+            "delayed",
+            "heal",
+            "healing",
+            "malunion",
+            "nonunion",
+            "routine"
+          ]
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        }
+      ],
+      "slot_count": 5,
+      "complexity_score": 20497200,
+      "template_pattern": "anatomy × injury × fracture_detail × healing × encounter"
+    },
+    "anatomy_x_injury_x_fracture_detail_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        },
+        {
+          "slot_name": "fracture_detail",
+          "vocabulary_name": "FRACTURE_DETAIL_TOKENS",
+          "vocabulary_size": 25,
+          "sample_tokens": [
+            "base",
+            "closed",
+            "comminuted",
+            "disp",
+            "displaced",
+            "epiphysis",
+            "extra-articular",
+            "extraarticular",
+            "fx",
+            "head"
+          ]
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        }
+      ],
+      "slot_count": 4,
+      "complexity_score": 3416200,
+      "template_pattern": "anatomy × injury × fracture_detail × encounter"
+    },
+    "anatomy_x_injury_x_healing_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        },
+        {
+          "slot_name": "healing",
+          "vocabulary_name": "HEALING_TOKENS",
+          "vocabulary_size": 6,
+          "sample_tokens": [
+            "delayed",
+            "heal",
+            "healing",
+            "malunion",
+            "nonunion",
+            "routine"
+          ]
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        }
+      ],
+      "slot_count": 4,
+      "complexity_score": 819888,
+      "template_pattern": "anatomy × injury × healing × encounter"
+    },
+    "anatomy_x_injury_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        }
+      ],
+      "slot_count": 3,
+      "complexity_score": 136648,
+      "template_pattern": "anatomy × injury × encounter"
+    },
+    "etiology_x_condition": {
+      "slots": [
+        {
+          "slot_name": "etiology",
+          "vocabulary_name": "ETIOLOGY_TOKENS",
+          "vocabulary_size": 8,
+          "sample_tokens": [
+            "associated",
+            "caused",
+            "due",
+            "following",
+            "induced",
+            "post",
+            "related",
+            "secondary"
+          ]
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary_name": "CONDITION_TOKENS",
+          "vocabulary_size": 201,
+          "sample_tokens": [
+            "abscess",
+            "absence",
+            "abuse",
+            "acne",
+            "adenoma",
+            "adhesion",
+            "agenesis",
+            "albinism",
+            "alopecia",
+            "amyloidosis"
+          ]
+        }
+      ],
+      "slot_count": 2,
+      "complexity_score": 1608,
+      "template_pattern": "etiology × condition"
+    },
+    "injury_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        }
+      ],
+      "slot_count": 2,
+      "complexity_score": 589,
+      "template_pattern": "injury × encounter"
+    },
+    "mechanism_x_injury_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "mechanism",
+          "vocabulary_name": "MECHANISM_TOKENS",
+          "vocabulary_size": 26,
+          "sample_tokens": [
+            "bike",
+            "bus",
+            "car",
+            "collision",
+            "cycle",
+            "driver",
+            "explosion",
+            "fall",
+            "fire",
+            "motor"
+          ]
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        }
+      ],
+      "slot_count": 3,
+      "complexity_score": 15314,
+      "template_pattern": "mechanism × injury × encounter"
+    },
+    "mechanism_x_anatomy_x_injury": {
+      "slots": [
+        {
+          "slot_name": "mechanism",
+          "vocabulary_name": "MECHANISM_TOKENS",
+          "vocabulary_size": 26,
+          "sample_tokens": [
+            "bike",
+            "bus",
+            "car",
+            "collision",
+            "cycle",
+            "driver",
+            "explosion",
+            "fall",
+            "fire",
+            "motor"
+          ]
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        }
+      ],
+      "slot_count": 3,
+      "complexity_score": 186992,
+      "template_pattern": "mechanism × anatomy × injury"
+    },
+    "diagnostic_classifier_x_anatomy_x_injury_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "diagnostic_classifier",
+          "vocabulary_name": "DIAGNOSTIC_CLASSIFIER_TOKENS",
+          "vocabulary_size": 74,
+          "sample_tokens": [
+            "activity",
+            "age",
+            "agerelated",
+            "bcell",
+            "bent",
+            "blood",
+            "borne",
+            "both",
+            "cancers",
+            "cell"
+          ]
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        }
+      ],
+      "slot_count": 4,
+      "complexity_score": 10111952,
+      "template_pattern": "diagnostic_classifier × anatomy × injury × encounter"
+    },
+    "mechanism_x_anatomy_x_injury_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "mechanism",
+          "vocabulary_name": "MECHANISM_TOKENS",
+          "vocabulary_size": 26,
+          "sample_tokens": [
+            "bike",
+            "bus",
+            "car",
+            "collision",
+            "cycle",
+            "driver",
+            "explosion",
+            "fall",
+            "fire",
+            "motor"
+          ]
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        }
+      ],
+      "slot_count": 4,
+      "complexity_score": 3552848,
+      "template_pattern": "mechanism × anatomy × injury × encounter"
+    },
+    "anatomy_x_condition": {
+      "slots": [
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary_name": "CONDITION_TOKENS",
+          "vocabulary_size": 201,
+          "sample_tokens": [
+            "abscess",
+            "absence",
+            "abuse",
+            "acne",
+            "adenoma",
+            "adhesion",
+            "agenesis",
+            "albinism",
+            "alopecia",
+            "amyloidosis"
+          ]
+        }
+      ],
+      "slot_count": 2,
+      "complexity_score": 46632,
+      "template_pattern": "anatomy × condition"
+    },
+    "procedure_x_complication": {
+      "slots": [
+        {
+          "slot_name": "procedure",
+          "vocabulary_name": "PROCEDURE_TOKENS",
+          "vocabulary_size": 20,
+          "sample_tokens": [
+            "arthroplasty",
+            "catheter",
+            "device",
+            "fixation",
+            "fusion",
+            "graft",
+            "implant",
+            "insertion",
+            "intervention",
+            "operation"
+          ]
+        },
+        {
+          "slot_name": "complication",
+          "vocabulary_name": "COMPLICATION_TOKENS",
+          "vocabulary_size": 11,
+          "sample_tokens": [
+            "breakdown",
+            "complication",
+            "displacement",
+            "failure",
+            "hemorrhage",
+            "infection",
+            "loosening",
+            "malfunction",
+            "reaction",
+            "retention"
+          ]
+        }
+      ],
+      "slot_count": 2,
+      "complexity_score": 220,
+      "template_pattern": "procedure × complication"
+    },
+    "mechanism_x_injury": {
+      "slots": [
+        {
+          "slot_name": "mechanism",
+          "vocabulary_name": "MECHANISM_TOKENS",
+          "vocabulary_size": 26,
+          "sample_tokens": [
+            "bike",
+            "bus",
+            "car",
+            "collision",
+            "cycle",
+            "driver",
+            "explosion",
+            "fall",
+            "fire",
+            "motor"
+          ]
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        }
+      ],
+      "slot_count": 2,
+      "complexity_score": 806,
+      "template_pattern": "mechanism × injury"
+    },
+    "anatomy_x_condition_low": {
+      "slots": [
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "condition_low",
+          "vocabulary_name": "CONDITION_LOW_TOKENS",
+          "vocabulary_size": 0,
+          "sample_tokens": []
+        }
+      ],
+      "slot_count": 2,
+      "complexity_score": 232,
+      "template_pattern": "anatomy × condition_low"
+    },
+    "condition_adjective_x_condition_high": {
+      "slots": [
+        {
+          "slot_name": "condition_adjective",
+          "vocabulary_name": "CONDITION_ADJECTIVE_TOKENS",
+          "vocabulary_size": 0,
+          "sample_tokens": []
+        },
+        {
+          "slot_name": "condition_high",
+          "vocabulary_name": "CONDITION_HIGH_TOKENS",
+          "vocabulary_size": 0,
+          "sample_tokens": []
+        }
+      ],
+      "slot_count": 2,
+      "complexity_score": 1,
+      "template_pattern": "condition_adjective × condition_high"
+    },
+    "anatomy_x_adjectival_condition": {
+      "slots": [
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "adjectival_condition",
+          "vocabulary_name": "ADJECTIVAL_CONDITION_TOKENS",
+          "vocabulary_size": 0,
+          "sample_tokens": []
+        }
+      ],
+      "slot_count": 2,
+      "complexity_score": 232,
+      "template_pattern": "anatomy × adjectival_condition"
+    },
+    "location_x_anatomy_x_condition": {
+      "slots": [
+        {
+          "slot_name": "location",
+          "vocabulary_name": "LOCATION_TOKENS",
+          "vocabulary_size": 15,
+          "sample_tokens": [
+            "anterior",
+            "central",
+            "distal",
+            "inferior",
+            "inner",
+            "lateral",
+            "lower",
+            "medial",
+            "middle",
+            "outer"
+          ]
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary_name": "CONDITION_TOKENS",
+          "vocabulary_size": 201,
+          "sample_tokens": [
+            "abscess",
+            "absence",
+            "abuse",
+            "acne",
+            "adenoma",
+            "adhesion",
+            "agenesis",
+            "albinism",
+            "alopecia",
+            "amyloidosis"
+          ]
+        }
+      ],
+      "slot_count": 3,
+      "complexity_score": 699480,
+      "template_pattern": "location × anatomy × condition"
+    },
+    "anatomy_prefix_x_condition": {
+      "slots": [
+        {
+          "slot_name": "anatomy_prefix",
+          "vocabulary_name": "ANATOMY_PREFIX_TOKENS",
+          "vocabulary_size": 0,
+          "sample_tokens": []
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary_name": "CONDITION_TOKENS",
+          "vocabulary_size": 201,
+          "sample_tokens": [
+            "abscess",
+            "absence",
+            "abuse",
+            "acne",
+            "adenoma",
+            "adhesion",
+            "agenesis",
+            "albinism",
+            "alopecia",
+            "amyloidosis"
+          ]
+        }
+      ],
+      "slot_count": 2,
+      "complexity_score": 201,
+      "template_pattern": "anatomy_prefix × condition"
+    },
+    "anatomy_x_injury_x_modifier_with_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary_name": "MODIFIER_WITH_TOKENS",
+          "vocabulary_size": 41,
+          "sample_tokens": [
+            "agitation",
+            "anxiety",
+            "behavioral",
+            "behavioral disturbance",
+            "brief",
+            "brief loss of consciousness",
+            "complication",
+            "complications",
+            "consciousness",
+            "delayed"
+          ]
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        }
+      ],
+      "slot_count": 4,
+      "complexity_score": 5602568,
+      "template_pattern": "anatomy × injury × modifier_with × encounter"
+    },
+    "anatomy_x_injury_x_fracture_detail_x_modifier_with_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        },
+        {
+          "slot_name": "fracture_detail",
+          "vocabulary_name": "FRACTURE_DETAIL_TOKENS",
+          "vocabulary_size": 25,
+          "sample_tokens": [
+            "base",
+            "closed",
+            "comminuted",
+            "disp",
+            "displaced",
+            "epiphysis",
+            "extra-articular",
+            "extraarticular",
+            "fx",
+            "head"
+          ]
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary_name": "MODIFIER_WITH_TOKENS",
+          "vocabulary_size": 41,
+          "sample_tokens": [
+            "agitation",
+            "anxiety",
+            "behavioral",
+            "behavioral disturbance",
+            "brief",
+            "brief loss of consciousness",
+            "complication",
+            "complications",
+            "consciousness",
+            "delayed"
+          ]
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        }
+      ],
+      "slot_count": 5,
+      "complexity_score": 140064200,
+      "template_pattern": "anatomy × injury × fracture_detail × modifier_with × encounter"
+    },
+    "injury_x_modifier_with_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary_name": "MODIFIER_WITH_TOKENS",
+          "vocabulary_size": 41,
+          "sample_tokens": [
+            "agitation",
+            "anxiety",
+            "behavioral",
+            "behavioral disturbance",
+            "brief",
+            "brief loss of consciousness",
+            "complication",
+            "complications",
+            "consciousness",
+            "delayed"
+          ]
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        }
+      ],
+      "slot_count": 3,
+      "complexity_score": 24149,
+      "template_pattern": "injury × modifier_with × encounter"
+    },
+    "condition_x_modifier_with": {
+      "slots": [
+        {
+          "slot_name": "condition",
+          "vocabulary_name": "CONDITION_TOKENS",
+          "vocabulary_size": 201,
+          "sample_tokens": [
+            "abscess",
+            "absence",
+            "abuse",
+            "acne",
+            "adenoma",
+            "adhesion",
+            "agenesis",
+            "albinism",
+            "alopecia",
+            "amyloidosis"
+          ]
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary_name": "MODIFIER_WITH_TOKENS",
+          "vocabulary_size": 41,
+          "sample_tokens": [
+            "agitation",
+            "anxiety",
+            "behavioral",
+            "behavioral disturbance",
+            "brief",
+            "brief loss of consciousness",
+            "complication",
+            "complications",
+            "consciousness",
+            "delayed"
+          ]
+        }
+      ],
+      "slot_count": 2,
+      "complexity_score": 8241,
+      "template_pattern": "condition × modifier_with"
+    },
+    "anatomy_x_condition_x_modifier_with": {
+      "slots": [
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary_name": "CONDITION_TOKENS",
+          "vocabulary_size": 201,
+          "sample_tokens": [
+            "abscess",
+            "absence",
+            "abuse",
+            "acne",
+            "adenoma",
+            "adhesion",
+            "agenesis",
+            "albinism",
+            "alopecia",
+            "amyloidosis"
+          ]
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary_name": "MODIFIER_WITH_TOKENS",
+          "vocabulary_size": 41,
+          "sample_tokens": [
+            "agitation",
+            "anxiety",
+            "behavioral",
+            "behavioral disturbance",
+            "brief",
+            "brief loss of consciousness",
+            "complication",
+            "complications",
+            "consciousness",
+            "delayed"
+          ]
+        }
+      ],
+      "slot_count": 3,
+      "complexity_score": 1911912,
+      "template_pattern": "anatomy × condition × modifier_with"
+    },
+    "laterality_x_anatomy_x_injury_x_modifier_with_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "laterality",
+          "vocabulary_name": "LATERALITY_TOKENS",
+          "vocabulary_size": 8,
+          "sample_tokens": [
+            "bilateral",
+            "left",
+            "lt",
+            "right",
+            "rt",
+            "unilateral",
+            "unsp",
+            "unspecified"
+          ]
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary_name": "MODIFIER_WITH_TOKENS",
+          "vocabulary_size": 41,
+          "sample_tokens": [
+            "agitation",
+            "anxiety",
+            "behavioral",
+            "behavioral disturbance",
+            "brief",
+            "brief loss of consciousness",
+            "complication",
+            "complications",
+            "consciousness",
+            "delayed"
+          ]
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        }
+      ],
+      "slot_count": 5,
+      "complexity_score": 44820544,
+      "template_pattern": "laterality × anatomy × injury × modifier_with × encounter"
+    },
+    "qualifier_x_condition_x_modifier_with": {
+      "slots": [
+        {
+          "slot_name": "qualifier",
+          "vocabulary_name": "QUALIFIER_TOKENS",
+          "vocabulary_size": 107,
+          "sample_tokens": [
+            "abnormal",
+            "abnormality",
+            "adult",
+            "allergic",
+            "alpha",
+            "androgenic",
+            "anetoderma",
+            "aneurysmal",
+            "arrest",
+            "associated"
+          ]
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary_name": "CONDITION_TOKENS",
+          "vocabulary_size": 201,
+          "sample_tokens": [
+            "abscess",
+            "absence",
+            "abuse",
+            "acne",
+            "adenoma",
+            "adhesion",
+            "agenesis",
+            "albinism",
+            "alopecia",
+            "amyloidosis"
+          ]
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary_name": "MODIFIER_WITH_TOKENS",
+          "vocabulary_size": 41,
+          "sample_tokens": [
+            "agitation",
+            "anxiety",
+            "behavioral",
+            "behavioral disturbance",
+            "brief",
+            "brief loss of consciousness",
+            "complication",
+            "complications",
+            "consciousness",
+            "delayed"
+          ]
+        }
+      ],
+      "slot_count": 3,
+      "complexity_score": 881787,
+      "template_pattern": "qualifier × condition × modifier_with"
+    },
+    "anatomy_x_injury_x_healing_x_modifier_with_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        },
+        {
+          "slot_name": "healing",
+          "vocabulary_name": "HEALING_TOKENS",
+          "vocabulary_size": 6,
+          "sample_tokens": [
+            "delayed",
+            "heal",
+            "healing",
+            "malunion",
+            "nonunion",
+            "routine"
+          ]
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary_name": "MODIFIER_WITH_TOKENS",
+          "vocabulary_size": 41,
+          "sample_tokens": [
+            "agitation",
+            "anxiety",
+            "behavioral",
+            "behavioral disturbance",
+            "brief",
+            "brief loss of consciousness",
+            "complication",
+            "complications",
+            "consciousness",
+            "delayed"
+          ]
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        }
+      ],
+      "slot_count": 5,
+      "complexity_score": 33615408,
+      "template_pattern": "anatomy × injury × healing × modifier_with × encounter"
+    },
+    "diagnostic_classifier_x_anatomy_x_injury_x_modifier_with_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "diagnostic_classifier",
+          "vocabulary_name": "DIAGNOSTIC_CLASSIFIER_TOKENS",
+          "vocabulary_size": 74,
+          "sample_tokens": [
+            "activity",
+            "age",
+            "agerelated",
+            "bcell",
+            "bent",
+            "blood",
+            "borne",
+            "both",
+            "cancers",
+            "cell"
+          ]
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary_name": "MODIFIER_WITH_TOKENS",
+          "vocabulary_size": 41,
+          "sample_tokens": [
+            "agitation",
+            "anxiety",
+            "behavioral",
+            "behavioral disturbance",
+            "brief",
+            "brief loss of consciousness",
+            "complication",
+            "complications",
+            "consciousness",
+            "delayed"
+          ]
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        }
+      ],
+      "slot_count": 5,
+      "complexity_score": 414590032,
+      "template_pattern": "diagnostic_classifier × anatomy × injury × modifier_with × encounter"
+    },
+    "laterality_x_anatomy_x_condition_x_modifier_with": {
+      "slots": [
+        {
+          "slot_name": "laterality",
+          "vocabulary_name": "LATERALITY_TOKENS",
+          "vocabulary_size": 8,
+          "sample_tokens": [
+            "bilateral",
+            "left",
+            "lt",
+            "right",
+            "rt",
+            "unilateral",
+            "unsp",
+            "unspecified"
+          ]
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary_name": "CONDITION_TOKENS",
+          "vocabulary_size": 201,
+          "sample_tokens": [
+            "abscess",
+            "absence",
+            "abuse",
+            "acne",
+            "adenoma",
+            "adhesion",
+            "agenesis",
+            "albinism",
+            "alopecia",
+            "amyloidosis"
+          ]
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary_name": "MODIFIER_WITH_TOKENS",
+          "vocabulary_size": 41,
+          "sample_tokens": [
+            "agitation",
+            "anxiety",
+            "behavioral",
+            "behavioral disturbance",
+            "brief",
+            "brief loss of consciousness",
+            "complication",
+            "complications",
+            "consciousness",
+            "delayed"
+          ]
+        }
+      ],
+      "slot_count": 4,
+      "complexity_score": 15295296,
+      "template_pattern": "laterality × anatomy × condition × modifier_with"
+    },
+    "qualifier_x_anatomy_x_condition_x_modifier_with": {
+      "slots": [
+        {
+          "slot_name": "qualifier",
+          "vocabulary_name": "QUALIFIER_TOKENS",
+          "vocabulary_size": 107,
+          "sample_tokens": [
+            "abnormal",
+            "abnormality",
+            "adult",
+            "allergic",
+            "alpha",
+            "androgenic",
+            "anetoderma",
+            "aneurysmal",
+            "arrest",
+            "associated"
+          ]
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary_name": "CONDITION_TOKENS",
+          "vocabulary_size": 201,
+          "sample_tokens": [
+            "abscess",
+            "absence",
+            "abuse",
+            "acne",
+            "adenoma",
+            "adhesion",
+            "agenesis",
+            "albinism",
+            "alopecia",
+            "amyloidosis"
+          ]
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary_name": "MODIFIER_WITH_TOKENS",
+          "vocabulary_size": 41,
+          "sample_tokens": [
+            "agitation",
+            "anxiety",
+            "behavioral",
+            "behavioral disturbance",
+            "brief",
+            "brief loss of consciousness",
+            "complication",
+            "complications",
+            "consciousness",
+            "delayed"
+          ]
+        }
+      ],
+      "slot_count": 4,
+      "complexity_score": 204574584,
+      "template_pattern": "qualifier × anatomy × condition × modifier_with"
+    },
+    "laterality_x_anatomy_x_injury_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "laterality",
+          "vocabulary_name": "LATERALITY_TOKENS",
+          "vocabulary_size": 8,
+          "sample_tokens": [
+            "bilateral",
+            "left",
+            "lt",
+            "right",
+            "rt",
+            "unilateral",
+            "unsp",
+            "unspecified"
+          ]
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        }
+      ],
+      "slot_count": 4,
+      "complexity_score": 1093184,
+      "template_pattern": "laterality × anatomy × injury × encounter"
+    },
+    "anatomy_x_laterality_x_injury_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "laterality",
+          "vocabulary_name": "LATERALITY_TOKENS",
+          "vocabulary_size": 8,
+          "sample_tokens": [
+            "bilateral",
+            "left",
+            "lt",
+            "right",
+            "rt",
+            "unilateral",
+            "unsp",
+            "unspecified"
+          ]
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        }
+      ],
+      "slot_count": 4,
+      "complexity_score": 1093184,
+      "template_pattern": "anatomy × laterality × injury × encounter"
+    },
+    "laterality_x_anatomy_x_condition": {
+      "slots": [
+        {
+          "slot_name": "laterality",
+          "vocabulary_name": "LATERALITY_TOKENS",
+          "vocabulary_size": 8,
+          "sample_tokens": [
+            "bilateral",
+            "left",
+            "lt",
+            "right",
+            "rt",
+            "unilateral",
+            "unsp",
+            "unspecified"
+          ]
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary_name": "CONDITION_TOKENS",
+          "vocabulary_size": 201,
+          "sample_tokens": [
+            "abscess",
+            "absence",
+            "abuse",
+            "acne",
+            "adenoma",
+            "adhesion",
+            "agenesis",
+            "albinism",
+            "alopecia",
+            "amyloidosis"
+          ]
+        }
+      ],
+      "slot_count": 3,
+      "complexity_score": 373056,
+      "template_pattern": "laterality × anatomy × condition"
+    },
+    "anatomy_x_laterality_x_condition": {
+      "slots": [
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "laterality",
+          "vocabulary_name": "LATERALITY_TOKENS",
+          "vocabulary_size": 8,
+          "sample_tokens": [
+            "bilateral",
+            "left",
+            "lt",
+            "right",
+            "rt",
+            "unilateral",
+            "unsp",
+            "unspecified"
+          ]
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary_name": "CONDITION_TOKENS",
+          "vocabulary_size": 201,
+          "sample_tokens": [
+            "abscess",
+            "absence",
+            "abuse",
+            "acne",
+            "adenoma",
+            "adhesion",
+            "agenesis",
+            "albinism",
+            "alopecia",
+            "amyloidosis"
+          ]
+        }
+      ],
+      "slot_count": 3,
+      "complexity_score": 373056,
+      "template_pattern": "anatomy × laterality × condition"
+    },
+    "injury_x_laterality_x_anatomy_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        },
+        {
+          "slot_name": "laterality",
+          "vocabulary_name": "LATERALITY_TOKENS",
+          "vocabulary_size": 8,
+          "sample_tokens": [
+            "bilateral",
+            "left",
+            "lt",
+            "right",
+            "rt",
+            "unilateral",
+            "unsp",
+            "unspecified"
+          ]
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        }
+      ],
+      "slot_count": 4,
+      "complexity_score": 1093184,
+      "template_pattern": "injury × laterality × anatomy × encounter"
+    },
+    "condition_x_laterality_x_anatomy": {
+      "slots": [
+        {
+          "slot_name": "condition",
+          "vocabulary_name": "CONDITION_TOKENS",
+          "vocabulary_size": 201,
+          "sample_tokens": [
+            "abscess",
+            "absence",
+            "abuse",
+            "acne",
+            "adenoma",
+            "adhesion",
+            "agenesis",
+            "albinism",
+            "alopecia",
+            "amyloidosis"
+          ]
+        },
+        {
+          "slot_name": "laterality",
+          "vocabulary_name": "LATERALITY_TOKENS",
+          "vocabulary_size": 8,
+          "sample_tokens": [
+            "bilateral",
+            "left",
+            "lt",
+            "right",
+            "rt",
+            "unilateral",
+            "unsp",
+            "unspecified"
+          ]
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        }
+      ],
+      "slot_count": 3,
+      "complexity_score": 373056,
+      "template_pattern": "condition × laterality × anatomy"
+    },
+    "laterality_x_anatomy_x_injury_x_fracture_detail_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "laterality",
+          "vocabulary_name": "LATERALITY_TOKENS",
+          "vocabulary_size": 8,
+          "sample_tokens": [
+            "bilateral",
+            "left",
+            "lt",
+            "right",
+            "rt",
+            "unilateral",
+            "unsp",
+            "unspecified"
+          ]
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        },
+        {
+          "slot_name": "fracture_detail",
+          "vocabulary_name": "FRACTURE_DETAIL_TOKENS",
+          "vocabulary_size": 25,
+          "sample_tokens": [
+            "base",
+            "closed",
+            "comminuted",
+            "disp",
+            "displaced",
+            "epiphysis",
+            "extra-articular",
+            "extraarticular",
+            "fx",
+            "head"
+          ]
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        }
+      ],
+      "slot_count": 5,
+      "complexity_score": 27329600,
+      "template_pattern": "laterality × anatomy × injury × fracture_detail × encounter"
+    },
+    "encounter_x_injury_x_anatomy": {
+      "slots": [
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        }
+      ],
+      "slot_count": 3,
+      "complexity_score": 136648,
+      "template_pattern": "encounter × injury × anatomy"
+    },
+    "encounter_x_condition": {
+      "slots": [
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary_name": "CONDITION_TOKENS",
+          "vocabulary_size": 201,
+          "sample_tokens": [
+            "abscess",
+            "absence",
+            "abuse",
+            "acne",
+            "adenoma",
+            "adhesion",
+            "agenesis",
+            "albinism",
+            "alopecia",
+            "amyloidosis"
+          ]
+        }
+      ],
+      "slot_count": 2,
+      "complexity_score": 3819,
+      "template_pattern": "encounter × condition"
+    },
+    "encounter_x_injury_x_fracture_detail": {
+      "slots": [
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        },
+        {
+          "slot_name": "fracture_detail",
+          "vocabulary_name": "FRACTURE_DETAIL_TOKENS",
+          "vocabulary_size": 25,
+          "sample_tokens": [
+            "base",
+            "closed",
+            "comminuted",
+            "disp",
+            "displaced",
+            "epiphysis",
+            "extra-articular",
+            "extraarticular",
+            "fx",
+            "head"
+          ]
+        }
+      ],
+      "slot_count": 3,
+      "complexity_score": 14725,
+      "template_pattern": "encounter × injury × fracture_detail"
+    },
+    "encounter_x_anatomy_x_injury_x_healing": {
+      "slots": [
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        },
+        {
+          "slot_name": "healing",
+          "vocabulary_name": "HEALING_TOKENS",
+          "vocabulary_size": 6,
+          "sample_tokens": [
+            "delayed",
+            "heal",
+            "healing",
+            "malunion",
+            "nonunion",
+            "routine"
+          ]
+        }
+      ],
+      "slot_count": 4,
+      "complexity_score": 819888,
+      "template_pattern": "encounter × anatomy × injury × healing"
+    },
+    "encounter_x_qualifier_x_injury": {
+      "slots": [
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        },
+        {
+          "slot_name": "qualifier",
+          "vocabulary_name": "QUALIFIER_TOKENS",
+          "vocabulary_size": 107,
+          "sample_tokens": [
+            "abnormal",
+            "abnormality",
+            "adult",
+            "allergic",
+            "alpha",
+            "androgenic",
+            "anetoderma",
+            "aneurysmal",
+            "arrest",
+            "associated"
+          ]
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        }
+      ],
+      "slot_count": 3,
+      "complexity_score": 63023,
+      "template_pattern": "encounter × qualifier × injury"
+    },
+    "disease_state_x_condition": {
+      "slots": [
+        {
+          "slot_name": "disease_state",
+          "vocabulary_name": "DISEASE_STATE_TOKENS",
+          "vocabulary_size": 23,
+          "sample_tokens": [
+            "acquired",
+            "active",
+            "acute",
+            "advancing",
+            "chronic",
+            "congenital",
+            "current",
+            "dormant",
+            "idiopathic",
+            "inactive"
+          ]
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary_name": "CONDITION_TOKENS",
+          "vocabulary_size": 201,
+          "sample_tokens": [
+            "abscess",
+            "absence",
+            "abuse",
+            "acne",
+            "adenoma",
+            "adhesion",
+            "agenesis",
+            "albinism",
+            "alopecia",
+            "amyloidosis"
+          ]
+        }
+      ],
+      "slot_count": 2,
+      "complexity_score": 4623,
+      "template_pattern": "disease_state × condition"
+    },
+    "disease_state_x_anatomy_x_condition": {
+      "slots": [
+        {
+          "slot_name": "disease_state",
+          "vocabulary_name": "DISEASE_STATE_TOKENS",
+          "vocabulary_size": 23,
+          "sample_tokens": [
+            "acquired",
+            "active",
+            "acute",
+            "advancing",
+            "chronic",
+            "congenital",
+            "current",
+            "dormant",
+            "idiopathic",
+            "inactive"
+          ]
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary_name": "CONDITION_TOKENS",
+          "vocabulary_size": 201,
+          "sample_tokens": [
+            "abscess",
+            "absence",
+            "abuse",
+            "acne",
+            "adenoma",
+            "adhesion",
+            "agenesis",
+            "albinism",
+            "alopecia",
+            "amyloidosis"
+          ]
+        }
+      ],
+      "slot_count": 3,
+      "complexity_score": 1072536,
+      "template_pattern": "disease_state × anatomy × condition"
+    },
+    "condition_x_disease_state": {
+      "slots": [
+        {
+          "slot_name": "condition",
+          "vocabulary_name": "CONDITION_TOKENS",
+          "vocabulary_size": 201,
+          "sample_tokens": [
+            "abscess",
+            "absence",
+            "abuse",
+            "acne",
+            "adenoma",
+            "adhesion",
+            "agenesis",
+            "albinism",
+            "alopecia",
+            "amyloidosis"
+          ]
+        },
+        {
+          "slot_name": "disease_state",
+          "vocabulary_name": "DISEASE_STATE_TOKENS",
+          "vocabulary_size": 23,
+          "sample_tokens": [
+            "acquired",
+            "active",
+            "acute",
+            "advancing",
+            "chronic",
+            "congenital",
+            "current",
+            "dormant",
+            "idiopathic",
+            "inactive"
+          ]
+        }
+      ],
+      "slot_count": 2,
+      "complexity_score": 4623,
+      "template_pattern": "condition × disease_state"
+    },
+    "maternal_context_x_condition": {
+      "slots": [
+        {
+          "slot_name": "maternal_context",
+          "vocabulary_name": "MATERNAL_CONTEXT_TOKENS",
+          "vocabulary_size": 38,
+          "sample_tokens": [
+            "abortion",
+            "affected",
+            "antenatal",
+            "antepartum",
+            "care",
+            "childbirth",
+            "delivery",
+            "ectopic",
+            "fetal",
+            "fetus"
+          ]
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary_name": "CONDITION_TOKENS",
+          "vocabulary_size": 201,
+          "sample_tokens": [
+            "abscess",
+            "absence",
+            "abuse",
+            "acne",
+            "adenoma",
+            "adhesion",
+            "agenesis",
+            "albinism",
+            "alopecia",
+            "amyloidosis"
+          ]
+        }
+      ],
+      "slot_count": 2,
+      "complexity_score": 7638,
+      "template_pattern": "maternal_context × condition"
+    },
+    "maternal_context_x_complication": {
+      "slots": [
+        {
+          "slot_name": "maternal_context",
+          "vocabulary_name": "MATERNAL_CONTEXT_TOKENS",
+          "vocabulary_size": 38,
+          "sample_tokens": [
+            "abortion",
+            "affected",
+            "antenatal",
+            "antepartum",
+            "care",
+            "childbirth",
+            "delivery",
+            "ectopic",
+            "fetal",
+            "fetus"
+          ]
+        },
+        {
+          "slot_name": "complication",
+          "vocabulary_name": "COMPLICATION_TOKENS",
+          "vocabulary_size": 11,
+          "sample_tokens": [
+            "breakdown",
+            "complication",
+            "displacement",
+            "failure",
+            "hemorrhage",
+            "infection",
+            "loosening",
+            "malfunction",
+            "reaction",
+            "retention"
+          ]
+        }
+      ],
+      "slot_count": 2,
+      "complexity_score": 418,
+      "template_pattern": "maternal_context × complication"
+    },
+    "condition_x_maternal_context": {
+      "slots": [
+        {
+          "slot_name": "condition",
+          "vocabulary_name": "CONDITION_TOKENS",
+          "vocabulary_size": 201,
+          "sample_tokens": [
+            "abscess",
+            "absence",
+            "abuse",
+            "acne",
+            "adenoma",
+            "adhesion",
+            "agenesis",
+            "albinism",
+            "alopecia",
+            "amyloidosis"
+          ]
+        },
+        {
+          "slot_name": "maternal_context",
+          "vocabulary_name": "MATERNAL_CONTEXT_TOKENS",
+          "vocabulary_size": 38,
+          "sample_tokens": [
+            "abortion",
+            "affected",
+            "antenatal",
+            "antepartum",
+            "care",
+            "childbirth",
+            "delivery",
+            "ectopic",
+            "fetal",
+            "fetus"
+          ]
+        }
+      ],
+      "slot_count": 2,
+      "complexity_score": 7638,
+      "template_pattern": "condition × maternal_context"
+    },
+    "maternal_context_x_anatomy": {
+      "slots": [
+        {
+          "slot_name": "maternal_context",
+          "vocabulary_name": "MATERNAL_CONTEXT_TOKENS",
+          "vocabulary_size": 38,
+          "sample_tokens": [
+            "abortion",
+            "affected",
+            "antenatal",
+            "antepartum",
+            "care",
+            "childbirth",
+            "delivery",
+            "ectopic",
+            "fetal",
+            "fetus"
+          ]
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        }
+      ],
+      "slot_count": 2,
+      "complexity_score": 8816,
+      "template_pattern": "maternal_context × anatomy"
+    },
+    "qualifier_x_laterality_x_anatomy_x_location_x_injury_x_modifier_with_x_duration_x_outcome_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "qualifier",
+          "vocabulary_name": "QUALIFIER_TOKENS",
+          "vocabulary_size": 107,
+          "sample_tokens": [
+            "abnormal",
+            "abnormality",
+            "adult",
+            "allergic",
+            "alpha",
+            "androgenic",
+            "anetoderma",
+            "aneurysmal",
+            "arrest",
+            "associated"
+          ]
+        },
+        {
+          "slot_name": "laterality",
+          "vocabulary_name": "LATERALITY_TOKENS",
+          "vocabulary_size": 8,
+          "sample_tokens": [
+            "bilateral",
+            "left",
+            "lt",
+            "right",
+            "rt",
+            "unilateral",
+            "unsp",
+            "unspecified"
+          ]
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "location",
+          "vocabulary_name": "LOCATION_TOKENS",
+          "vocabulary_size": 15,
+          "sample_tokens": [
+            "anterior",
+            "central",
+            "distal",
+            "inferior",
+            "inner",
+            "lateral",
+            "lower",
+            "medial",
+            "middle",
+            "outer"
+          ]
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary_name": "MODIFIER_WITH_TOKENS",
+          "vocabulary_size": 41,
+          "sample_tokens": [
+            "agitation",
+            "anxiety",
+            "behavioral",
+            "behavioral disturbance",
+            "brief",
+            "brief loss of consciousness",
+            "complication",
+            "complications",
+            "consciousness",
+            "delayed"
+          ]
+        },
+        {
+          "slot_name": "duration",
+          "vocabulary_name": "DURATION_TOKENS",
+          "vocabulary_size": 37,
+          "sample_tokens": [
+            "24 hours",
+            "30 minutes",
+            "6 hours",
+            "brief",
+            "day",
+            "days",
+            "duration",
+            "extended",
+            "fewer",
+            "greater"
+          ]
+        },
+        {
+          "slot_name": "outcome",
+          "vocabulary_name": "OUTCOME_TOKENS",
+          "vocabulary_size": 20,
+          "sample_tokens": [
+            "after",
+            "alive",
+            "before",
+            "death",
+            "died",
+            "dying",
+            "fatal",
+            "fatality",
+            "living",
+            "patient"
+          ]
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        }
+      ],
+      "slot_count": 9,
+      "complexity_score": 53233360108800,
+      "template_pattern": "qualifier × laterality × anatomy × location × injury × modifier_with × duration × outcome × encounter"
+    },
+    "qualifier_x_laterality_x_anatomy_x_injury_x_modifier_with_x_outcome_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "qualifier",
+          "vocabulary_name": "QUALIFIER_TOKENS",
+          "vocabulary_size": 107,
+          "sample_tokens": [
+            "abnormal",
+            "abnormality",
+            "adult",
+            "allergic",
+            "alpha",
+            "androgenic",
+            "anetoderma",
+            "aneurysmal",
+            "arrest",
+            "associated"
+          ]
+        },
+        {
+          "slot_name": "laterality",
+          "vocabulary_name": "LATERALITY_TOKENS",
+          "vocabulary_size": 8,
+          "sample_tokens": [
+            "bilateral",
+            "left",
+            "lt",
+            "right",
+            "rt",
+            "unilateral",
+            "unsp",
+            "unspecified"
+          ]
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary_name": "MODIFIER_WITH_TOKENS",
+          "vocabulary_size": 41,
+          "sample_tokens": [
+            "agitation",
+            "anxiety",
+            "behavioral",
+            "behavioral disturbance",
+            "brief",
+            "brief loss of consciousness",
+            "complication",
+            "complications",
+            "consciousness",
+            "delayed"
+          ]
+        },
+        {
+          "slot_name": "outcome",
+          "vocabulary_name": "OUTCOME_TOKENS",
+          "vocabulary_size": 20,
+          "sample_tokens": [
+            "after",
+            "alive",
+            "before",
+            "death",
+            "died",
+            "dying",
+            "fatal",
+            "fatality",
+            "living",
+            "patient"
+          ]
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        }
+      ],
+      "slot_count": 7,
+      "complexity_score": 95915964160,
+      "template_pattern": "qualifier × laterality × anatomy × injury × modifier_with × outcome × encounter"
+    },
+    "qualifier_x_laterality_x_anatomy_x_location_x_injury_x_modifier_with_x_duration_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "qualifier",
+          "vocabulary_name": "QUALIFIER_TOKENS",
+          "vocabulary_size": 107,
+          "sample_tokens": [
+            "abnormal",
+            "abnormality",
+            "adult",
+            "allergic",
+            "alpha",
+            "androgenic",
+            "anetoderma",
+            "aneurysmal",
+            "arrest",
+            "associated"
+          ]
+        },
+        {
+          "slot_name": "laterality",
+          "vocabulary_name": "LATERALITY_TOKENS",
+          "vocabulary_size": 8,
+          "sample_tokens": [
+            "bilateral",
+            "left",
+            "lt",
+            "right",
+            "rt",
+            "unilateral",
+            "unsp",
+            "unspecified"
+          ]
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "location",
+          "vocabulary_name": "LOCATION_TOKENS",
+          "vocabulary_size": 15,
+          "sample_tokens": [
+            "anterior",
+            "central",
+            "distal",
+            "inferior",
+            "inner",
+            "lateral",
+            "lower",
+            "medial",
+            "middle",
+            "outer"
+          ]
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary_name": "MODIFIER_WITH_TOKENS",
+          "vocabulary_size": 41,
+          "sample_tokens": [
+            "agitation",
+            "anxiety",
+            "behavioral",
+            "behavioral disturbance",
+            "brief",
+            "brief loss of consciousness",
+            "complication",
+            "complications",
+            "consciousness",
+            "delayed"
+          ]
+        },
+        {
+          "slot_name": "duration",
+          "vocabulary_name": "DURATION_TOKENS",
+          "vocabulary_size": 37,
+          "sample_tokens": [
+            "24 hours",
+            "30 minutes",
+            "6 hours",
+            "brief",
+            "day",
+            "days",
+            "duration",
+            "extended",
+            "fewer",
+            "greater"
+          ]
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        }
+      ],
+      "slot_count": 8,
+      "complexity_score": 2661668005440,
+      "template_pattern": "qualifier × laterality × anatomy × location × injury × modifier_with × duration × encounter"
+    },
+    "qualifier_x_laterality_x_anatomy_x_injury_x_modifier_with_x_duration_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "qualifier",
+          "vocabulary_name": "QUALIFIER_TOKENS",
+          "vocabulary_size": 107,
+          "sample_tokens": [
+            "abnormal",
+            "abnormality",
+            "adult",
+            "allergic",
+            "alpha",
+            "androgenic",
+            "anetoderma",
+            "aneurysmal",
+            "arrest",
+            "associated"
+          ]
+        },
+        {
+          "slot_name": "laterality",
+          "vocabulary_name": "LATERALITY_TOKENS",
+          "vocabulary_size": 8,
+          "sample_tokens": [
+            "bilateral",
+            "left",
+            "lt",
+            "right",
+            "rt",
+            "unilateral",
+            "unsp",
+            "unspecified"
+          ]
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary_name": "MODIFIER_WITH_TOKENS",
+          "vocabulary_size": 41,
+          "sample_tokens": [
+            "agitation",
+            "anxiety",
+            "behavioral",
+            "behavioral disturbance",
+            "brief",
+            "brief loss of consciousness",
+            "complication",
+            "complications",
+            "consciousness",
+            "delayed"
+          ]
+        },
+        {
+          "slot_name": "duration",
+          "vocabulary_name": "DURATION_TOKENS",
+          "vocabulary_size": 37,
+          "sample_tokens": [
+            "24 hours",
+            "30 minutes",
+            "6 hours",
+            "brief",
+            "day",
+            "days",
+            "duration",
+            "extended",
+            "fewer",
+            "greater"
+          ]
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        }
+      ],
+      "slot_count": 7,
+      "complexity_score": 177444533696,
+      "template_pattern": "qualifier × laterality × anatomy × injury × modifier_with × duration × encounter"
+    },
+    "laterality_x_anatomy_x_injury_x_modifier_with_x_duration_x_outcome_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "laterality",
+          "vocabulary_name": "LATERALITY_TOKENS",
+          "vocabulary_size": 8,
+          "sample_tokens": [
+            "bilateral",
+            "left",
+            "lt",
+            "right",
+            "rt",
+            "unilateral",
+            "unsp",
+            "unspecified"
+          ]
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary_name": "MODIFIER_WITH_TOKENS",
+          "vocabulary_size": 41,
+          "sample_tokens": [
+            "agitation",
+            "anxiety",
+            "behavioral",
+            "behavioral disturbance",
+            "brief",
+            "brief loss of consciousness",
+            "complication",
+            "complications",
+            "consciousness",
+            "delayed"
+          ]
+        },
+        {
+          "slot_name": "duration",
+          "vocabulary_name": "DURATION_TOKENS",
+          "vocabulary_size": 37,
+          "sample_tokens": [
+            "24 hours",
+            "30 minutes",
+            "6 hours",
+            "brief",
+            "day",
+            "days",
+            "duration",
+            "extended",
+            "fewer",
+            "greater"
+          ]
+        },
+        {
+          "slot_name": "outcome",
+          "vocabulary_name": "OUTCOME_TOKENS",
+          "vocabulary_size": 20,
+          "sample_tokens": [
+            "after",
+            "alive",
+            "before",
+            "death",
+            "died",
+            "dying",
+            "fatal",
+            "fatality",
+            "living",
+            "patient"
+          ]
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        }
+      ],
+      "slot_count": 7,
+      "complexity_score": 33167202560,
+      "template_pattern": "laterality × anatomy × injury × modifier_with × duration × outcome × encounter"
+    },
+    "laterality_x_anatomy_x_injury_x_modifier_with_x_outcome_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "laterality",
+          "vocabulary_name": "LATERALITY_TOKENS",
+          "vocabulary_size": 8,
+          "sample_tokens": [
+            "bilateral",
+            "left",
+            "lt",
+            "right",
+            "rt",
+            "unilateral",
+            "unsp",
+            "unspecified"
+          ]
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary_name": "ANATOMY_TOKENS",
+          "vocabulary_size": 232,
+          "sample_tokens": [
+            "abdomen",
+            "abdominal",
+            "adenoid",
+            "adrenal",
+            "anastomosis",
+            "ankle",
+            "anus",
+            "aorta",
+            "aortic",
+            "apex"
+          ]
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary_name": "INJURY_TOKENS",
+          "vocabulary_size": 31,
+          "sample_tokens": [
+            "abrasion",
+            "accident",
+            "amputation",
+            "avulsion",
+            "bite",
+            "blast",
+            "blister",
+            "bruise",
+            "burn",
+            "contact"
+          ]
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary_name": "MODIFIER_WITH_TOKENS",
+          "vocabulary_size": 41,
+          "sample_tokens": [
+            "agitation",
+            "anxiety",
+            "behavioral",
+            "behavioral disturbance",
+            "brief",
+            "brief loss of consciousness",
+            "complication",
+            "complications",
+            "consciousness",
+            "delayed"
+          ]
+        },
+        {
+          "slot_name": "outcome",
+          "vocabulary_name": "OUTCOME_TOKENS",
+          "vocabulary_size": 20,
+          "sample_tokens": [
+            "after",
+            "alive",
+            "before",
+            "death",
+            "died",
+            "dying",
+            "fatal",
+            "fatality",
+            "living",
+            "patient"
+          ]
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary_name": "ENCOUNTER_TOKENS",
+          "vocabulary_size": 19,
+          "sample_tokens": [
+            "encntr",
+            "encounter",
+            "encounter for",
+            "encounter for fracture",
+            "init",
+            "init encntr",
+            "initial",
+            "initial encntr",
+            "initial encounter",
+            "initial encounter for"
+          ]
+        }
+      ],
+      "slot_count": 6,
+      "complexity_score": 896410880,
+      "template_pattern": "laterality × anatomy × injury × modifier_with × outcome × encounter"
+    }
+  }
+}
