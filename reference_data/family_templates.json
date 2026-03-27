@@ -1,0 +1,2129 @@
+{
+  "metadata": {
+    "source": "analyze_compositionality.py",
+    "description": "Family template definitions for ICD-10-CM compositional analysis",
+    "total_families": 71,
+    "slot_count_range": {
+      "min": 2,
+      "max": 9,
+      "avg": 3.464788732394366
+    }
+  },
+  "families": {
+    "diagnostic_event_x_condition_x_diagnostic_context": {
+      "slots": [
+        {
+          "slot_name": "diagnostic_event",
+          "vocabulary": "DIAGNOSTIC_EVENT_TOKENS"
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary": "CONDITION_TOKENS"
+        },
+        {
+          "slot_name": "diagnostic_context",
+          "vocabulary": "DIAGNOSTIC_CONTEXT_TOKENS"
+        }
+      ],
+      "slot_count": 3,
+      "slot_names": [
+        "diagnostic_event",
+        "condition",
+        "diagnostic_context"
+      ],
+      "vocabularies": [
+        "DIAGNOSTIC_EVENT_TOKENS",
+        "CONDITION_TOKENS",
+        "DIAGNOSTIC_CONTEXT_TOKENS"
+      ]
+    },
+    "qualifier_x_diagnostic_event_x_condition_x_diagnostic_context": {
+      "slots": [
+        {
+          "slot_name": "qualifier",
+          "vocabulary": "QUALIFIER_TOKENS"
+        },
+        {
+          "slot_name": "diagnostic_event",
+          "vocabulary": "DIAGNOSTIC_EVENT_TOKENS"
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary": "CONDITION_TOKENS"
+        },
+        {
+          "slot_name": "diagnostic_context",
+          "vocabulary": "DIAGNOSTIC_CONTEXT_TOKENS"
+        }
+      ],
+      "slot_count": 4,
+      "slot_names": [
+        "qualifier",
+        "diagnostic_event",
+        "condition",
+        "diagnostic_context"
+      ],
+      "vocabularies": [
+        "QUALIFIER_TOKENS",
+        "DIAGNOSTIC_EVENT_TOKENS",
+        "CONDITION_TOKENS",
+        "DIAGNOSTIC_CONTEXT_TOKENS"
+      ]
+    },
+    "diagnostic_classifier_x_anatomy_x_injury_x_diagnostic_event": {
+      "slots": [
+        {
+          "slot_name": "diagnostic_classifier",
+          "vocabulary": "DIAGNOSTIC_CLASSIFIER_TOKENS"
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        },
+        {
+          "slot_name": "diagnostic_event",
+          "vocabulary": "DIAGNOSTIC_EVENT_TOKENS"
+        }
+      ],
+      "slot_count": 4,
+      "slot_names": [
+        "diagnostic_classifier",
+        "anatomy",
+        "injury",
+        "diagnostic_event"
+      ],
+      "vocabularies": [
+        "DIAGNOSTIC_CLASSIFIER_TOKENS",
+        "ANATOMY_TOKENS",
+        "INJURY_TOKENS",
+        "DIAGNOSTIC_EVENT_TOKENS"
+      ]
+    },
+    "anatomy_x_injury_x_diagnostic_event": {
+      "slots": [
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        },
+        {
+          "slot_name": "diagnostic_event",
+          "vocabulary": "DIAGNOSTIC_EVENT_TOKENS"
+        }
+      ],
+      "slot_count": 3,
+      "slot_names": [
+        "anatomy",
+        "injury",
+        "diagnostic_event"
+      ],
+      "vocabularies": [
+        "ANATOMY_TOKENS",
+        "INJURY_TOKENS",
+        "DIAGNOSTIC_EVENT_TOKENS"
+      ]
+    },
+    "injury_x_healing_x_diagnostic_event": {
+      "slots": [
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        },
+        {
+          "slot_name": "healing",
+          "vocabulary": "HEALING_TOKENS"
+        },
+        {
+          "slot_name": "diagnostic_event",
+          "vocabulary": "DIAGNOSTIC_EVENT_TOKENS"
+        }
+      ],
+      "slot_count": 3,
+      "slot_names": [
+        "injury",
+        "healing",
+        "diagnostic_event"
+      ],
+      "vocabularies": [
+        "INJURY_TOKENS",
+        "HEALING_TOKENS",
+        "DIAGNOSTIC_EVENT_TOKENS"
+      ]
+    },
+    "anatomy_x_condition_x_diagnostic_event": {
+      "slots": [
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary": "CONDITION_TOKENS"
+        },
+        {
+          "slot_name": "diagnostic_event",
+          "vocabulary": "DIAGNOSTIC_EVENT_TOKENS"
+        }
+      ],
+      "slot_count": 3,
+      "slot_names": [
+        "anatomy",
+        "condition",
+        "diagnostic_event"
+      ],
+      "vocabularies": [
+        "ANATOMY_TOKENS",
+        "CONDITION_TOKENS",
+        "DIAGNOSTIC_EVENT_TOKENS"
+      ]
+    },
+    "diagnostic_event_x_condition": {
+      "slots": [
+        {
+          "slot_name": "diagnostic_event",
+          "vocabulary": "DIAGNOSTIC_EVENT_TOKENS"
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary": "CONDITION_TOKENS"
+        }
+      ],
+      "slot_count": 2,
+      "slot_names": [
+        "diagnostic_event",
+        "condition"
+      ],
+      "vocabularies": [
+        "DIAGNOSTIC_EVENT_TOKENS",
+        "CONDITION_TOKENS"
+      ]
+    },
+    "diagnostic_event_x_injury": {
+      "slots": [
+        {
+          "slot_name": "diagnostic_event",
+          "vocabulary": "DIAGNOSTIC_EVENT_TOKENS"
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        }
+      ],
+      "slot_count": 2,
+      "slot_names": [
+        "diagnostic_event",
+        "injury"
+      ],
+      "vocabularies": [
+        "DIAGNOSTIC_EVENT_TOKENS",
+        "INJURY_TOKENS"
+      ]
+    },
+    "toxic_event_x_agent_x_intent_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "toxic_event",
+          "vocabulary": "TOXIC_EVENT_TOKENS"
+        },
+        {
+          "slot_name": "toxic_agent",
+          "vocabulary": "TOXIC_AGENT_TOKENS"
+        },
+        {
+          "slot_name": "toxic_intent",
+          "vocabulary": "TOXIC_INTENT_TOKENS"
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        }
+      ],
+      "slot_count": 4,
+      "slot_names": [
+        "toxic_event",
+        "toxic_agent",
+        "toxic_intent",
+        "encounter"
+      ],
+      "vocabularies": [
+        "TOXIC_EVENT_TOKENS",
+        "TOXIC_AGENT_TOKENS",
+        "TOXIC_INTENT_TOKENS",
+        "ENCOUNTER_TOKENS"
+      ]
+    },
+    "toxic_event_x_intent_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "toxic_event",
+          "vocabulary": "TOXIC_EVENT_TOKENS"
+        },
+        {
+          "slot_name": "toxic_intent",
+          "vocabulary": "TOXIC_INTENT_TOKENS"
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        }
+      ],
+      "slot_count": 3,
+      "slot_names": [
+        "toxic_event",
+        "toxic_intent",
+        "encounter"
+      ],
+      "vocabularies": [
+        "TOXIC_EVENT_TOKENS",
+        "TOXIC_INTENT_TOKENS",
+        "ENCOUNTER_TOKENS"
+      ]
+    },
+    "toxic_event_x_agent_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "toxic_event",
+          "vocabulary": "TOXIC_EVENT_TOKENS"
+        },
+        {
+          "slot_name": "toxic_agent",
+          "vocabulary": "TOXIC_AGENT_TOKENS"
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        }
+      ],
+      "slot_count": 3,
+      "slot_names": [
+        "toxic_event",
+        "toxic_agent",
+        "encounter"
+      ],
+      "vocabularies": [
+        "TOXIC_EVENT_TOKENS",
+        "TOXIC_AGENT_TOKENS",
+        "ENCOUNTER_TOKENS"
+      ]
+    },
+    "qualifier_x_toxic_event_x_intent_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "qualifier",
+          "vocabulary": "QUALIFIER_TOKENS"
+        },
+        {
+          "slot_name": "toxic_event",
+          "vocabulary": "TOXIC_EVENT_TOKENS"
+        },
+        {
+          "slot_name": "toxic_intent",
+          "vocabulary": "TOXIC_INTENT_TOKENS"
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        }
+      ],
+      "slot_count": 4,
+      "slot_names": [
+        "qualifier",
+        "toxic_event",
+        "toxic_intent",
+        "encounter"
+      ],
+      "vocabularies": [
+        "QUALIFIER_TOKENS",
+        "TOXIC_EVENT_TOKENS",
+        "TOXIC_INTENT_TOKENS",
+        "ENCOUNTER_TOKENS"
+      ]
+    },
+    "toxic_event_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "toxic_event",
+          "vocabulary": "TOXIC_EVENT_TOKENS"
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        }
+      ],
+      "slot_count": 2,
+      "slot_names": [
+        "toxic_event",
+        "encounter"
+      ],
+      "vocabularies": [
+        "TOXIC_EVENT_TOKENS",
+        "ENCOUNTER_TOKENS"
+      ]
+    },
+    "qualifier_x_anatomy_x_injury_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "qualifier",
+          "vocabulary": "QUALIFIER_TOKENS"
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        }
+      ],
+      "slot_count": 4,
+      "slot_names": [
+        "qualifier",
+        "anatomy",
+        "injury",
+        "encounter"
+      ],
+      "vocabularies": [
+        "QUALIFIER_TOKENS",
+        "ANATOMY_TOKENS",
+        "INJURY_TOKENS",
+        "ENCOUNTER_TOKENS"
+      ]
+    },
+    "qualifier_x_injury_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "qualifier",
+          "vocabulary": "QUALIFIER_TOKENS"
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        }
+      ],
+      "slot_count": 3,
+      "slot_names": [
+        "qualifier",
+        "injury",
+        "encounter"
+      ],
+      "vocabularies": [
+        "QUALIFIER_TOKENS",
+        "INJURY_TOKENS",
+        "ENCOUNTER_TOKENS"
+      ]
+    },
+    "qualifier_x_anatomy_x_condition": {
+      "slots": [
+        {
+          "slot_name": "qualifier",
+          "vocabulary": "QUALIFIER_TOKENS"
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary": "CONDITION_TOKENS"
+        }
+      ],
+      "slot_count": 3,
+      "slot_names": [
+        "qualifier",
+        "anatomy",
+        "condition"
+      ],
+      "vocabularies": [
+        "QUALIFIER_TOKENS",
+        "ANATOMY_TOKENS",
+        "CONDITION_TOKENS"
+      ]
+    },
+    "qualifier_x_condition": {
+      "slots": [
+        {
+          "slot_name": "qualifier",
+          "vocabulary": "QUALIFIER_TOKENS"
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary": "CONDITION_TOKENS"
+        }
+      ],
+      "slot_count": 2,
+      "slot_names": [
+        "qualifier",
+        "condition"
+      ],
+      "vocabularies": [
+        "QUALIFIER_TOKENS",
+        "CONDITION_TOKENS"
+      ]
+    },
+    "anatomy_x_injury_x_fracture_detail_x_healing_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        },
+        {
+          "slot_name": "fracture_detail",
+          "vocabulary": "FRACTURE_DETAIL_TOKENS"
+        },
+        {
+          "slot_name": "healing",
+          "vocabulary": "HEALING_TOKENS"
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        }
+      ],
+      "slot_count": 5,
+      "slot_names": [
+        "anatomy",
+        "injury",
+        "fracture_detail",
+        "healing",
+        "encounter"
+      ],
+      "vocabularies": [
+        "ANATOMY_TOKENS",
+        "INJURY_TOKENS",
+        "FRACTURE_DETAIL_TOKENS",
+        "HEALING_TOKENS",
+        "ENCOUNTER_TOKENS"
+      ]
+    },
+    "anatomy_x_injury_x_fracture_detail_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        },
+        {
+          "slot_name": "fracture_detail",
+          "vocabulary": "FRACTURE_DETAIL_TOKENS"
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        }
+      ],
+      "slot_count": 4,
+      "slot_names": [
+        "anatomy",
+        "injury",
+        "fracture_detail",
+        "encounter"
+      ],
+      "vocabularies": [
+        "ANATOMY_TOKENS",
+        "INJURY_TOKENS",
+        "FRACTURE_DETAIL_TOKENS",
+        "ENCOUNTER_TOKENS"
+      ]
+    },
+    "anatomy_x_injury_x_healing_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        },
+        {
+          "slot_name": "healing",
+          "vocabulary": "HEALING_TOKENS"
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        }
+      ],
+      "slot_count": 4,
+      "slot_names": [
+        "anatomy",
+        "injury",
+        "healing",
+        "encounter"
+      ],
+      "vocabularies": [
+        "ANATOMY_TOKENS",
+        "INJURY_TOKENS",
+        "HEALING_TOKENS",
+        "ENCOUNTER_TOKENS"
+      ]
+    },
+    "anatomy_x_injury_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        }
+      ],
+      "slot_count": 3,
+      "slot_names": [
+        "anatomy",
+        "injury",
+        "encounter"
+      ],
+      "vocabularies": [
+        "ANATOMY_TOKENS",
+        "INJURY_TOKENS",
+        "ENCOUNTER_TOKENS"
+      ]
+    },
+    "etiology_x_condition": {
+      "slots": [
+        {
+          "slot_name": "etiology",
+          "vocabulary": "ETIOLOGY_TOKENS"
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary": "CONDITION_TOKENS"
+        }
+      ],
+      "slot_count": 2,
+      "slot_names": [
+        "etiology",
+        "condition"
+      ],
+      "vocabularies": [
+        "ETIOLOGY_TOKENS",
+        "CONDITION_TOKENS"
+      ]
+    },
+    "injury_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        }
+      ],
+      "slot_count": 2,
+      "slot_names": [
+        "injury",
+        "encounter"
+      ],
+      "vocabularies": [
+        "INJURY_TOKENS",
+        "ENCOUNTER_TOKENS"
+      ]
+    },
+    "mechanism_x_injury_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "mechanism",
+          "vocabulary": "MECHANISM_TOKENS"
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        }
+      ],
+      "slot_count": 3,
+      "slot_names": [
+        "mechanism",
+        "injury",
+        "encounter"
+      ],
+      "vocabularies": [
+        "MECHANISM_TOKENS",
+        "INJURY_TOKENS",
+        "ENCOUNTER_TOKENS"
+      ]
+    },
+    "mechanism_x_anatomy_x_injury": {
+      "slots": [
+        {
+          "slot_name": "mechanism",
+          "vocabulary": "MECHANISM_TOKENS"
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        }
+      ],
+      "slot_count": 3,
+      "slot_names": [
+        "mechanism",
+        "anatomy",
+        "injury"
+      ],
+      "vocabularies": [
+        "MECHANISM_TOKENS",
+        "ANATOMY_TOKENS",
+        "INJURY_TOKENS"
+      ]
+    },
+    "diagnostic_classifier_x_anatomy_x_injury_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "diagnostic_classifier",
+          "vocabulary": "DIAGNOSTIC_CLASSIFIER_TOKENS"
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        }
+      ],
+      "slot_count": 4,
+      "slot_names": [
+        "diagnostic_classifier",
+        "anatomy",
+        "injury",
+        "encounter"
+      ],
+      "vocabularies": [
+        "DIAGNOSTIC_CLASSIFIER_TOKENS",
+        "ANATOMY_TOKENS",
+        "INJURY_TOKENS",
+        "ENCOUNTER_TOKENS"
+      ]
+    },
+    "mechanism_x_anatomy_x_injury_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "mechanism",
+          "vocabulary": "MECHANISM_TOKENS"
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        }
+      ],
+      "slot_count": 4,
+      "slot_names": [
+        "mechanism",
+        "anatomy",
+        "injury",
+        "encounter"
+      ],
+      "vocabularies": [
+        "MECHANISM_TOKENS",
+        "ANATOMY_TOKENS",
+        "INJURY_TOKENS",
+        "ENCOUNTER_TOKENS"
+      ]
+    },
+    "anatomy_x_condition": {
+      "slots": [
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary": "CONDITION_TOKENS"
+        }
+      ],
+      "slot_count": 2,
+      "slot_names": [
+        "anatomy",
+        "condition"
+      ],
+      "vocabularies": [
+        "ANATOMY_TOKENS",
+        "CONDITION_TOKENS"
+      ]
+    },
+    "procedure_x_complication": {
+      "slots": [
+        {
+          "slot_name": "procedure",
+          "vocabulary": "PROCEDURE_TOKENS"
+        },
+        {
+          "slot_name": "complication",
+          "vocabulary": "COMPLICATION_TOKENS"
+        }
+      ],
+      "slot_count": 2,
+      "slot_names": [
+        "procedure",
+        "complication"
+      ],
+      "vocabularies": [
+        "PROCEDURE_TOKENS",
+        "COMPLICATION_TOKENS"
+      ]
+    },
+    "mechanism_x_injury": {
+      "slots": [
+        {
+          "slot_name": "mechanism",
+          "vocabulary": "MECHANISM_TOKENS"
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        }
+      ],
+      "slot_count": 2,
+      "slot_names": [
+        "mechanism",
+        "injury"
+      ],
+      "vocabularies": [
+        "MECHANISM_TOKENS",
+        "INJURY_TOKENS"
+      ]
+    },
+    "anatomy_x_condition_low": {
+      "slots": [
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "condition_low",
+          "vocabulary": "CONDITION_LOW_TOKENS"
+        }
+      ],
+      "slot_count": 2,
+      "slot_names": [
+        "anatomy",
+        "condition_low"
+      ],
+      "vocabularies": [
+        "ANATOMY_TOKENS",
+        "CONDITION_LOW_TOKENS"
+      ]
+    },
+    "condition_adjective_x_condition_high": {
+      "slots": [
+        {
+          "slot_name": "condition_adjective",
+          "vocabulary": "CONDITION_ADJECTIVE_TOKENS"
+        },
+        {
+          "slot_name": "condition_high",
+          "vocabulary": "CONDITION_HIGH_TOKENS"
+        }
+      ],
+      "slot_count": 2,
+      "slot_names": [
+        "condition_adjective",
+        "condition_high"
+      ],
+      "vocabularies": [
+        "CONDITION_ADJECTIVE_TOKENS",
+        "CONDITION_HIGH_TOKENS"
+      ]
+    },
+    "anatomy_x_adjectival_condition": {
+      "slots": [
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "adjectival_condition",
+          "vocabulary": "ADJECTIVAL_CONDITION_TOKENS"
+        }
+      ],
+      "slot_count": 2,
+      "slot_names": [
+        "anatomy",
+        "adjectival_condition"
+      ],
+      "vocabularies": [
+        "ANATOMY_TOKENS",
+        "ADJECTIVAL_CONDITION_TOKENS"
+      ]
+    },
+    "location_x_anatomy_x_condition": {
+      "slots": [
+        {
+          "slot_name": "location",
+          "vocabulary": "LOCATION_TOKENS"
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary": "CONDITION_TOKENS"
+        }
+      ],
+      "slot_count": 3,
+      "slot_names": [
+        "location",
+        "anatomy",
+        "condition"
+      ],
+      "vocabularies": [
+        "LOCATION_TOKENS",
+        "ANATOMY_TOKENS",
+        "CONDITION_TOKENS"
+      ]
+    },
+    "anatomy_prefix_x_condition": {
+      "slots": [
+        {
+          "slot_name": "anatomy_prefix",
+          "vocabulary": "ANATOMY_PREFIX_TOKENS"
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary": "CONDITION_TOKENS"
+        }
+      ],
+      "slot_count": 2,
+      "slot_names": [
+        "anatomy_prefix",
+        "condition"
+      ],
+      "vocabularies": [
+        "ANATOMY_PREFIX_TOKENS",
+        "CONDITION_TOKENS"
+      ]
+    },
+    "anatomy_x_injury_x_modifier_with_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary": "MODIFIER_WITH_TOKENS"
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        }
+      ],
+      "slot_count": 4,
+      "slot_names": [
+        "anatomy",
+        "injury",
+        "modifier_with",
+        "encounter"
+      ],
+      "vocabularies": [
+        "ANATOMY_TOKENS",
+        "INJURY_TOKENS",
+        "MODIFIER_WITH_TOKENS",
+        "ENCOUNTER_TOKENS"
+      ]
+    },
+    "anatomy_x_injury_x_fracture_detail_x_modifier_with_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        },
+        {
+          "slot_name": "fracture_detail",
+          "vocabulary": "FRACTURE_DETAIL_TOKENS"
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary": "MODIFIER_WITH_TOKENS"
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        }
+      ],
+      "slot_count": 5,
+      "slot_names": [
+        "anatomy",
+        "injury",
+        "fracture_detail",
+        "modifier_with",
+        "encounter"
+      ],
+      "vocabularies": [
+        "ANATOMY_TOKENS",
+        "INJURY_TOKENS",
+        "FRACTURE_DETAIL_TOKENS",
+        "MODIFIER_WITH_TOKENS",
+        "ENCOUNTER_TOKENS"
+      ]
+    },
+    "injury_x_modifier_with_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary": "MODIFIER_WITH_TOKENS"
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        }
+      ],
+      "slot_count": 3,
+      "slot_names": [
+        "injury",
+        "modifier_with",
+        "encounter"
+      ],
+      "vocabularies": [
+        "INJURY_TOKENS",
+        "MODIFIER_WITH_TOKENS",
+        "ENCOUNTER_TOKENS"
+      ]
+    },
+    "condition_x_modifier_with": {
+      "slots": [
+        {
+          "slot_name": "condition",
+          "vocabulary": "CONDITION_TOKENS"
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary": "MODIFIER_WITH_TOKENS"
+        }
+      ],
+      "slot_count": 2,
+      "slot_names": [
+        "condition",
+        "modifier_with"
+      ],
+      "vocabularies": [
+        "CONDITION_TOKENS",
+        "MODIFIER_WITH_TOKENS"
+      ]
+    },
+    "anatomy_x_condition_x_modifier_with": {
+      "slots": [
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary": "CONDITION_TOKENS"
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary": "MODIFIER_WITH_TOKENS"
+        }
+      ],
+      "slot_count": 3,
+      "slot_names": [
+        "anatomy",
+        "condition",
+        "modifier_with"
+      ],
+      "vocabularies": [
+        "ANATOMY_TOKENS",
+        "CONDITION_TOKENS",
+        "MODIFIER_WITH_TOKENS"
+      ]
+    },
+    "laterality_x_anatomy_x_injury_x_modifier_with_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "laterality",
+          "vocabulary": "LATERALITY_TOKENS"
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary": "MODIFIER_WITH_TOKENS"
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        }
+      ],
+      "slot_count": 5,
+      "slot_names": [
+        "laterality",
+        "anatomy",
+        "injury",
+        "modifier_with",
+        "encounter"
+      ],
+      "vocabularies": [
+        "LATERALITY_TOKENS",
+        "ANATOMY_TOKENS",
+        "INJURY_TOKENS",
+        "MODIFIER_WITH_TOKENS",
+        "ENCOUNTER_TOKENS"
+      ]
+    },
+    "qualifier_x_condition_x_modifier_with": {
+      "slots": [
+        {
+          "slot_name": "qualifier",
+          "vocabulary": "QUALIFIER_TOKENS"
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary": "CONDITION_TOKENS"
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary": "MODIFIER_WITH_TOKENS"
+        }
+      ],
+      "slot_count": 3,
+      "slot_names": [
+        "qualifier",
+        "condition",
+        "modifier_with"
+      ],
+      "vocabularies": [
+        "QUALIFIER_TOKENS",
+        "CONDITION_TOKENS",
+        "MODIFIER_WITH_TOKENS"
+      ]
+    },
+    "anatomy_x_injury_x_healing_x_modifier_with_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        },
+        {
+          "slot_name": "healing",
+          "vocabulary": "HEALING_TOKENS"
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary": "MODIFIER_WITH_TOKENS"
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        }
+      ],
+      "slot_count": 5,
+      "slot_names": [
+        "anatomy",
+        "injury",
+        "healing",
+        "modifier_with",
+        "encounter"
+      ],
+      "vocabularies": [
+        "ANATOMY_TOKENS",
+        "INJURY_TOKENS",
+        "HEALING_TOKENS",
+        "MODIFIER_WITH_TOKENS",
+        "ENCOUNTER_TOKENS"
+      ]
+    },
+    "diagnostic_classifier_x_anatomy_x_injury_x_modifier_with_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "diagnostic_classifier",
+          "vocabulary": "DIAGNOSTIC_CLASSIFIER_TOKENS"
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary": "MODIFIER_WITH_TOKENS"
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        }
+      ],
+      "slot_count": 5,
+      "slot_names": [
+        "diagnostic_classifier",
+        "anatomy",
+        "injury",
+        "modifier_with",
+        "encounter"
+      ],
+      "vocabularies": [
+        "DIAGNOSTIC_CLASSIFIER_TOKENS",
+        "ANATOMY_TOKENS",
+        "INJURY_TOKENS",
+        "MODIFIER_WITH_TOKENS",
+        "ENCOUNTER_TOKENS"
+      ]
+    },
+    "laterality_x_anatomy_x_condition_x_modifier_with": {
+      "slots": [
+        {
+          "slot_name": "laterality",
+          "vocabulary": "LATERALITY_TOKENS"
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary": "CONDITION_TOKENS"
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary": "MODIFIER_WITH_TOKENS"
+        }
+      ],
+      "slot_count": 4,
+      "slot_names": [
+        "laterality",
+        "anatomy",
+        "condition",
+        "modifier_with"
+      ],
+      "vocabularies": [
+        "LATERALITY_TOKENS",
+        "ANATOMY_TOKENS",
+        "CONDITION_TOKENS",
+        "MODIFIER_WITH_TOKENS"
+      ]
+    },
+    "qualifier_x_anatomy_x_condition_x_modifier_with": {
+      "slots": [
+        {
+          "slot_name": "qualifier",
+          "vocabulary": "QUALIFIER_TOKENS"
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary": "CONDITION_TOKENS"
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary": "MODIFIER_WITH_TOKENS"
+        }
+      ],
+      "slot_count": 4,
+      "slot_names": [
+        "qualifier",
+        "anatomy",
+        "condition",
+        "modifier_with"
+      ],
+      "vocabularies": [
+        "QUALIFIER_TOKENS",
+        "ANATOMY_TOKENS",
+        "CONDITION_TOKENS",
+        "MODIFIER_WITH_TOKENS"
+      ]
+    },
+    "laterality_x_anatomy_x_injury_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "laterality",
+          "vocabulary": "LATERALITY_TOKENS"
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        }
+      ],
+      "slot_count": 4,
+      "slot_names": [
+        "laterality",
+        "anatomy",
+        "injury",
+        "encounter"
+      ],
+      "vocabularies": [
+        "LATERALITY_TOKENS",
+        "ANATOMY_TOKENS",
+        "INJURY_TOKENS",
+        "ENCOUNTER_TOKENS"
+      ]
+    },
+    "anatomy_x_laterality_x_injury_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "laterality",
+          "vocabulary": "LATERALITY_TOKENS"
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        }
+      ],
+      "slot_count": 4,
+      "slot_names": [
+        "anatomy",
+        "laterality",
+        "injury",
+        "encounter"
+      ],
+      "vocabularies": [
+        "ANATOMY_TOKENS",
+        "LATERALITY_TOKENS",
+        "INJURY_TOKENS",
+        "ENCOUNTER_TOKENS"
+      ]
+    },
+    "laterality_x_anatomy_x_condition": {
+      "slots": [
+        {
+          "slot_name": "laterality",
+          "vocabulary": "LATERALITY_TOKENS"
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary": "CONDITION_TOKENS"
+        }
+      ],
+      "slot_count": 3,
+      "slot_names": [
+        "laterality",
+        "anatomy",
+        "condition"
+      ],
+      "vocabularies": [
+        "LATERALITY_TOKENS",
+        "ANATOMY_TOKENS",
+        "CONDITION_TOKENS"
+      ]
+    },
+    "anatomy_x_laterality_x_condition": {
+      "slots": [
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "laterality",
+          "vocabulary": "LATERALITY_TOKENS"
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary": "CONDITION_TOKENS"
+        }
+      ],
+      "slot_count": 3,
+      "slot_names": [
+        "anatomy",
+        "laterality",
+        "condition"
+      ],
+      "vocabularies": [
+        "ANATOMY_TOKENS",
+        "LATERALITY_TOKENS",
+        "CONDITION_TOKENS"
+      ]
+    },
+    "injury_x_laterality_x_anatomy_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        },
+        {
+          "slot_name": "laterality",
+          "vocabulary": "LATERALITY_TOKENS"
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        }
+      ],
+      "slot_count": 4,
+      "slot_names": [
+        "injury",
+        "laterality",
+        "anatomy",
+        "encounter"
+      ],
+      "vocabularies": [
+        "INJURY_TOKENS",
+        "LATERALITY_TOKENS",
+        "ANATOMY_TOKENS",
+        "ENCOUNTER_TOKENS"
+      ]
+    },
+    "condition_x_laterality_x_anatomy": {
+      "slots": [
+        {
+          "slot_name": "condition",
+          "vocabulary": "CONDITION_TOKENS"
+        },
+        {
+          "slot_name": "laterality",
+          "vocabulary": "LATERALITY_TOKENS"
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        }
+      ],
+      "slot_count": 3,
+      "slot_names": [
+        "condition",
+        "laterality",
+        "anatomy"
+      ],
+      "vocabularies": [
+        "CONDITION_TOKENS",
+        "LATERALITY_TOKENS",
+        "ANATOMY_TOKENS"
+      ]
+    },
+    "laterality_x_anatomy_x_injury_x_fracture_detail_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "laterality",
+          "vocabulary": "LATERALITY_TOKENS"
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        },
+        {
+          "slot_name": "fracture_detail",
+          "vocabulary": "FRACTURE_DETAIL_TOKENS"
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        }
+      ],
+      "slot_count": 5,
+      "slot_names": [
+        "laterality",
+        "anatomy",
+        "injury",
+        "fracture_detail",
+        "encounter"
+      ],
+      "vocabularies": [
+        "LATERALITY_TOKENS",
+        "ANATOMY_TOKENS",
+        "INJURY_TOKENS",
+        "FRACTURE_DETAIL_TOKENS",
+        "ENCOUNTER_TOKENS"
+      ]
+    },
+    "encounter_x_injury_x_anatomy": {
+      "slots": [
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        }
+      ],
+      "slot_count": 3,
+      "slot_names": [
+        "encounter",
+        "injury",
+        "anatomy"
+      ],
+      "vocabularies": [
+        "ENCOUNTER_TOKENS",
+        "INJURY_TOKENS",
+        "ANATOMY_TOKENS"
+      ]
+    },
+    "encounter_x_condition": {
+      "slots": [
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary": "CONDITION_TOKENS"
+        }
+      ],
+      "slot_count": 2,
+      "slot_names": [
+        "encounter",
+        "condition"
+      ],
+      "vocabularies": [
+        "ENCOUNTER_TOKENS",
+        "CONDITION_TOKENS"
+      ]
+    },
+    "encounter_x_injury_x_fracture_detail": {
+      "slots": [
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        },
+        {
+          "slot_name": "fracture_detail",
+          "vocabulary": "FRACTURE_DETAIL_TOKENS"
+        }
+      ],
+      "slot_count": 3,
+      "slot_names": [
+        "encounter",
+        "injury",
+        "fracture_detail"
+      ],
+      "vocabularies": [
+        "ENCOUNTER_TOKENS",
+        "INJURY_TOKENS",
+        "FRACTURE_DETAIL_TOKENS"
+      ]
+    },
+    "encounter_x_anatomy_x_injury_x_healing": {
+      "slots": [
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        },
+        {
+          "slot_name": "healing",
+          "vocabulary": "HEALING_TOKENS"
+        }
+      ],
+      "slot_count": 4,
+      "slot_names": [
+        "encounter",
+        "anatomy",
+        "injury",
+        "healing"
+      ],
+      "vocabularies": [
+        "ENCOUNTER_TOKENS",
+        "ANATOMY_TOKENS",
+        "INJURY_TOKENS",
+        "HEALING_TOKENS"
+      ]
+    },
+    "encounter_x_qualifier_x_injury": {
+      "slots": [
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        },
+        {
+          "slot_name": "qualifier",
+          "vocabulary": "QUALIFIER_TOKENS"
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        }
+      ],
+      "slot_count": 3,
+      "slot_names": [
+        "encounter",
+        "qualifier",
+        "injury"
+      ],
+      "vocabularies": [
+        "ENCOUNTER_TOKENS",
+        "QUALIFIER_TOKENS",
+        "INJURY_TOKENS"
+      ]
+    },
+    "disease_state_x_condition": {
+      "slots": [
+        {
+          "slot_name": "disease_state",
+          "vocabulary": "DISEASE_STATE_TOKENS"
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary": "CONDITION_TOKENS"
+        }
+      ],
+      "slot_count": 2,
+      "slot_names": [
+        "disease_state",
+        "condition"
+      ],
+      "vocabularies": [
+        "DISEASE_STATE_TOKENS",
+        "CONDITION_TOKENS"
+      ]
+    },
+    "disease_state_x_anatomy_x_condition": {
+      "slots": [
+        {
+          "slot_name": "disease_state",
+          "vocabulary": "DISEASE_STATE_TOKENS"
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary": "CONDITION_TOKENS"
+        }
+      ],
+      "slot_count": 3,
+      "slot_names": [
+        "disease_state",
+        "anatomy",
+        "condition"
+      ],
+      "vocabularies": [
+        "DISEASE_STATE_TOKENS",
+        "ANATOMY_TOKENS",
+        "CONDITION_TOKENS"
+      ]
+    },
+    "condition_x_disease_state": {
+      "slots": [
+        {
+          "slot_name": "condition",
+          "vocabulary": "CONDITION_TOKENS"
+        },
+        {
+          "slot_name": "disease_state",
+          "vocabulary": "DISEASE_STATE_TOKENS"
+        }
+      ],
+      "slot_count": 2,
+      "slot_names": [
+        "condition",
+        "disease_state"
+      ],
+      "vocabularies": [
+        "CONDITION_TOKENS",
+        "DISEASE_STATE_TOKENS"
+      ]
+    },
+    "maternal_context_x_condition": {
+      "slots": [
+        {
+          "slot_name": "maternal_context",
+          "vocabulary": "MATERNAL_CONTEXT_TOKENS"
+        },
+        {
+          "slot_name": "condition",
+          "vocabulary": "CONDITION_TOKENS"
+        }
+      ],
+      "slot_count": 2,
+      "slot_names": [
+        "maternal_context",
+        "condition"
+      ],
+      "vocabularies": [
+        "MATERNAL_CONTEXT_TOKENS",
+        "CONDITION_TOKENS"
+      ]
+    },
+    "maternal_context_x_complication": {
+      "slots": [
+        {
+          "slot_name": "maternal_context",
+          "vocabulary": "MATERNAL_CONTEXT_TOKENS"
+        },
+        {
+          "slot_name": "complication",
+          "vocabulary": "COMPLICATION_TOKENS"
+        }
+      ],
+      "slot_count": 2,
+      "slot_names": [
+        "maternal_context",
+        "complication"
+      ],
+      "vocabularies": [
+        "MATERNAL_CONTEXT_TOKENS",
+        "COMPLICATION_TOKENS"
+      ]
+    },
+    "condition_x_maternal_context": {
+      "slots": [
+        {
+          "slot_name": "condition",
+          "vocabulary": "CONDITION_TOKENS"
+        },
+        {
+          "slot_name": "maternal_context",
+          "vocabulary": "MATERNAL_CONTEXT_TOKENS"
+        }
+      ],
+      "slot_count": 2,
+      "slot_names": [
+        "condition",
+        "maternal_context"
+      ],
+      "vocabularies": [
+        "CONDITION_TOKENS",
+        "MATERNAL_CONTEXT_TOKENS"
+      ]
+    },
+    "maternal_context_x_anatomy": {
+      "slots": [
+        {
+          "slot_name": "maternal_context",
+          "vocabulary": "MATERNAL_CONTEXT_TOKENS"
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        }
+      ],
+      "slot_count": 2,
+      "slot_names": [
+        "maternal_context",
+        "anatomy"
+      ],
+      "vocabularies": [
+        "MATERNAL_CONTEXT_TOKENS",
+        "ANATOMY_TOKENS"
+      ]
+    },
+    "qualifier_x_laterality_x_anatomy_x_location_x_injury_x_modifier_with_x_duration_x_outcome_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "qualifier",
+          "vocabulary": "QUALIFIER_TOKENS"
+        },
+        {
+          "slot_name": "laterality",
+          "vocabulary": "LATERALITY_TOKENS"
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "location",
+          "vocabulary": "LOCATION_TOKENS"
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary": "MODIFIER_WITH_TOKENS"
+        },
+        {
+          "slot_name": "duration",
+          "vocabulary": "DURATION_TOKENS"
+        },
+        {
+          "slot_name": "outcome",
+          "vocabulary": "OUTCOME_TOKENS"
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        }
+      ],
+      "slot_count": 9,
+      "slot_names": [
+        "qualifier",
+        "laterality",
+        "anatomy",
+        "location",
+        "injury",
+        "modifier_with",
+        "duration",
+        "outcome",
+        "encounter"
+      ],
+      "vocabularies": [
+        "QUALIFIER_TOKENS",
+        "LATERALITY_TOKENS",
+        "ANATOMY_TOKENS",
+        "LOCATION_TOKENS",
+        "INJURY_TOKENS",
+        "MODIFIER_WITH_TOKENS",
+        "DURATION_TOKENS",
+        "OUTCOME_TOKENS",
+        "ENCOUNTER_TOKENS"
+      ]
+    },
+    "qualifier_x_laterality_x_anatomy_x_injury_x_modifier_with_x_outcome_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "qualifier",
+          "vocabulary": "QUALIFIER_TOKENS"
+        },
+        {
+          "slot_name": "laterality",
+          "vocabulary": "LATERALITY_TOKENS"
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary": "MODIFIER_WITH_TOKENS"
+        },
+        {
+          "slot_name": "outcome",
+          "vocabulary": "OUTCOME_TOKENS"
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        }
+      ],
+      "slot_count": 7,
+      "slot_names": [
+        "qualifier",
+        "laterality",
+        "anatomy",
+        "injury",
+        "modifier_with",
+        "outcome",
+        "encounter"
+      ],
+      "vocabularies": [
+        "QUALIFIER_TOKENS",
+        "LATERALITY_TOKENS",
+        "ANATOMY_TOKENS",
+        "INJURY_TOKENS",
+        "MODIFIER_WITH_TOKENS",
+        "OUTCOME_TOKENS",
+        "ENCOUNTER_TOKENS"
+      ]
+    },
+    "qualifier_x_laterality_x_anatomy_x_location_x_injury_x_modifier_with_x_duration_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "qualifier",
+          "vocabulary": "QUALIFIER_TOKENS"
+        },
+        {
+          "slot_name": "laterality",
+          "vocabulary": "LATERALITY_TOKENS"
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "location",
+          "vocabulary": "LOCATION_TOKENS"
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary": "MODIFIER_WITH_TOKENS"
+        },
+        {
+          "slot_name": "duration",
+          "vocabulary": "DURATION_TOKENS"
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        }
+      ],
+      "slot_count": 8,
+      "slot_names": [
+        "qualifier",
+        "laterality",
+        "anatomy",
+        "location",
+        "injury",
+        "modifier_with",
+        "duration",
+        "encounter"
+      ],
+      "vocabularies": [
+        "QUALIFIER_TOKENS",
+        "LATERALITY_TOKENS",
+        "ANATOMY_TOKENS",
+        "LOCATION_TOKENS",
+        "INJURY_TOKENS",
+        "MODIFIER_WITH_TOKENS",
+        "DURATION_TOKENS",
+        "ENCOUNTER_TOKENS"
+      ]
+    },
+    "qualifier_x_laterality_x_anatomy_x_injury_x_modifier_with_x_duration_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "qualifier",
+          "vocabulary": "QUALIFIER_TOKENS"
+        },
+        {
+          "slot_name": "laterality",
+          "vocabulary": "LATERALITY_TOKENS"
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary": "MODIFIER_WITH_TOKENS"
+        },
+        {
+          "slot_name": "duration",
+          "vocabulary": "DURATION_TOKENS"
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        }
+      ],
+      "slot_count": 7,
+      "slot_names": [
+        "qualifier",
+        "laterality",
+        "anatomy",
+        "injury",
+        "modifier_with",
+        "duration",
+        "encounter"
+      ],
+      "vocabularies": [
+        "QUALIFIER_TOKENS",
+        "LATERALITY_TOKENS",
+        "ANATOMY_TOKENS",
+        "INJURY_TOKENS",
+        "MODIFIER_WITH_TOKENS",
+        "DURATION_TOKENS",
+        "ENCOUNTER_TOKENS"
+      ]
+    },
+    "laterality_x_anatomy_x_injury_x_modifier_with_x_duration_x_outcome_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "laterality",
+          "vocabulary": "LATERALITY_TOKENS"
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary": "MODIFIER_WITH_TOKENS"
+        },
+        {
+          "slot_name": "duration",
+          "vocabulary": "DURATION_TOKENS"
+        },
+        {
+          "slot_name": "outcome",
+          "vocabulary": "OUTCOME_TOKENS"
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        }
+      ],
+      "slot_count": 7,
+      "slot_names": [
+        "laterality",
+        "anatomy",
+        "injury",
+        "modifier_with",
+        "duration",
+        "outcome",
+        "encounter"
+      ],
+      "vocabularies": [
+        "LATERALITY_TOKENS",
+        "ANATOMY_TOKENS",
+        "INJURY_TOKENS",
+        "MODIFIER_WITH_TOKENS",
+        "DURATION_TOKENS",
+        "OUTCOME_TOKENS",
+        "ENCOUNTER_TOKENS"
+      ]
+    },
+    "laterality_x_anatomy_x_injury_x_modifier_with_x_outcome_x_encounter": {
+      "slots": [
+        {
+          "slot_name": "laterality",
+          "vocabulary": "LATERALITY_TOKENS"
+        },
+        {
+          "slot_name": "anatomy",
+          "vocabulary": "ANATOMY_TOKENS"
+        },
+        {
+          "slot_name": "injury",
+          "vocabulary": "INJURY_TOKENS"
+        },
+        {
+          "slot_name": "modifier_with",
+          "vocabulary": "MODIFIER_WITH_TOKENS"
+        },
+        {
+          "slot_name": "outcome",
+          "vocabulary": "OUTCOME_TOKENS"
+        },
+        {
+          "slot_name": "encounter",
+          "vocabulary": "ENCOUNTER_TOKENS"
+        }
+      ],
+      "slot_count": 6,
+      "slot_names": [
+        "laterality",
+        "anatomy",
+        "injury",
+        "modifier_with",
+        "outcome",
+        "encounter"
+      ],
+      "vocabularies": [
+        "LATERALITY_TOKENS",
+        "ANATOMY_TOKENS",
+        "INJURY_TOKENS",
+        "MODIFIER_WITH_TOKENS",
+        "OUTCOME_TOKENS",
+        "ENCOUNTER_TOKENS"
+      ]
+    }
+  }
+}

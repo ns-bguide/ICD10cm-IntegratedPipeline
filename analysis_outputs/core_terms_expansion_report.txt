@@ -1,0 +1,110 @@
+=== Template-based expansion report ===
+
+Slot vocabularies used:
+  ANATOMY_TOKENS   : 232 tokens
+  CONDITION_TOKENS : 201 tokens
+
+Empirical pairs extracted from existing 11157 core terms:
+  Conditions with anatomy variants      : 92
+  Noun anatomy tokens (of-position)     : 141
+
+Expansion settings:
+  MIN_ATTESTATIONS = 3
+  SKIP_CONDITIONS  = ['condition', 'disease', 'diseases', 'disorder', 'disorders', 'malignancy', 'of', 'symptom', 'syndromes']
+
+New terms generated : 6514
+Total core terms    : 17671
+
+Family templates with anatomy×condition/injury slots (38):
+  anatomy_x_condition
+  anatomy_x_condition_x_diagnostic_event
+  anatomy_x_condition_x_modifier_with
+  anatomy_x_injury_x_diagnostic_event
+  anatomy_x_injury_x_encounter
+  anatomy_x_injury_x_fracture_detail_x_encounter
+  anatomy_x_injury_x_fracture_detail_x_healing_x_encounter
+  anatomy_x_injury_x_fracture_detail_x_modifier_with_x_encounter
+  anatomy_x_injury_x_healing_x_encounter
+  anatomy_x_injury_x_healing_x_modifier_with_x_encounter
+  anatomy_x_injury_x_modifier_with_x_encounter
+  anatomy_x_laterality_x_condition
+  anatomy_x_laterality_x_injury_x_encounter
+  condition_x_laterality_x_anatomy
+  diagnostic_classifier_x_anatomy_x_injury_x_diagnostic_event
+  diagnostic_classifier_x_anatomy_x_injury_x_encounter
+  diagnostic_classifier_x_anatomy_x_injury_x_modifier_with_x_encounter
+  disease_state_x_anatomy_x_condition
+  encounter_x_anatomy_x_injury_x_healing
+  encounter_x_injury_x_anatomy
+  injury_x_laterality_x_anatomy_x_encounter
+  laterality_x_anatomy_x_condition
+  laterality_x_anatomy_x_condition_x_modifier_with
+  laterality_x_anatomy_x_injury_x_encounter
+  laterality_x_anatomy_x_injury_x_fracture_detail_x_encounter
+  laterality_x_anatomy_x_injury_x_modifier_with_x_duration_x_outcome_x_encounter
+  laterality_x_anatomy_x_injury_x_modifier_with_x_encounter
+  laterality_x_anatomy_x_injury_x_modifier_with_x_outcome_x_encounter
+  location_x_anatomy_x_condition
+  mechanism_x_anatomy_x_injury
+  mechanism_x_anatomy_x_injury_x_encounter
+  qualifier_x_anatomy_x_condition
+  qualifier_x_anatomy_x_condition_x_modifier_with
+  qualifier_x_anatomy_x_injury_x_encounter
+  qualifier_x_laterality_x_anatomy_x_injury_x_modifier_with_x_duration_x_encounter
+  qualifier_x_laterality_x_anatomy_x_injury_x_modifier_with_x_outcome_x_encounter
+  qualifier_x_laterality_x_anatomy_x_location_x_injury_x_modifier_with_x_duration_x_encounter
+  qualifier_x_laterality_x_anatomy_x_location_x_injury_x_modifier_with_x_duration_x_outcome_x_encounter
+
+Top expanded conditions (most new anatomy variants):
+  thrombosis               : +122 new  (3 attested)
+  hernia                   : +121 new  (3 attested)
+  ischemia                 : +121 new  (3 attested)
+  lesion                   : +121 new  (3 attested)
+  anomaly                  : +120 new  (3 attested)
+  compression              : +120 new  (3 attested)
+  cysts                    : +120 new  (4 attested)
+  failure                  : +120 new  (6 attested)
+  syndrome                 : +120 new  (5 attested)
+  agenesis                 : +119 new  (4 attested)
+  aneurysm                 : +119 new  (5 attested)
+  aplasia                  : +119 new  (3 attested)
+  carcinoid                : +119 new  (3 attested)
+  contracture              : +119 new  (3 attested)
+  degeneration             : +119 new  (5 attested)
+  diverticulum             : +119 new  (4 attested)
+  edema                    : +119 new  (8 attested)
+  infections               : +119 new  (6 attested)
+  inflammation             : +119 new  (5 attested)
+  leakage                  : +119 new  (5 attested)
+
+Sample of new terms:
+  abscess of abdomen
+  abscess of adrenal
+  abscess of ankle
+  abscess of anus
+  abscess of aorta
+  abscess of appendix
+  abscess of arteries
+  abscess of artery
+  abscess of bladder
+  abscess of body
+  abscess of bone
+  abscess of brain
+  abscess of bronchus
+  abscess of colon
+  abscess of conjunctiva
+  abscess of cornea
+  abscess of diaphragm
+  abscess of dome
+  abscess of duodenum
+  abscess of ear
+  abscess of elbow
+  abscess of endocardium
+  abscess of endocervix
+  abscess of endometrium
+  abscess of esophagus
+  abscess of eustachian
+  abscess of eye
+  abscess of finger
+  abscess of forearm
+  abscess of fundus
