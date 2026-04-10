@@ -129,6 +129,26 @@ All production data is version-tracked. Current version: `2026-04-10-v8`.
 | v7 | 93.63% | 92 | 1,273 | Added 36 templates (orphaned vocabs + missing combos) |
 | **v8** | **92.70%** | **90** | **1,273** | Removed 2 HIGH FP-risk templates |
 
+## Roadmap
+
+### Done
+
+- Structural validation pipeline (validate, suggest, apply, precision, reconcile)
+- Cross-slot collision resolution and duplicate cleanup
+- JSON/Python analyzer reconciliation
+- ICD abbreviation vocabulary (60 tokens)
+- Templates for all orphaned vocabularies
+- Missing template combinations from gap analysis
+- FP-risk analysis and HIGH-risk template removal
+
+### Next
+
+- **Additional ICD abbreviations** (~100 rare abbreviations) — est. +1-2% coverage
+- **Anatomical sub-specialties** (muscles, vessels, nerves as distinct vocabs) — est. +0.5-1%
+- **UMLS/CHV integration** — expand beyond ICD-10-CM to Consumer Health Vocabulary and UMLS Metathesaurus terms
+- **Named disease vocabulary** — proper nouns (Wilson disease, Kawasaki syndrome) — est. +0.5-1%, medium FP risk
+- **Theoretical ceiling**: ~95-96% of ICD-10-CM terms
+
 ## License
 
 [Add license information]
